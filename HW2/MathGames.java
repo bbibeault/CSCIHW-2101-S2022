@@ -1,5 +1,10 @@
 package HW2;
 
+import java.sql.SQLNonTransientConnectionException;
+import java.util.Scanner;
+
+import javax.print.event.PrintEvent;
+import javax.sql.rowset.spi.SyncResolver;
 
 public class MathGames {
     // 1. Create a method that will calculate the Pythagorean Theorem (https://en.wikipedia.org/wiki/Pythagorean_theorem)
@@ -10,8 +15,17 @@ public class MathGames {
     // Hint 2: Math.pow and Math.sqrt are your friend here
     // Bonus points: Try to make it accept any 2 sides and return the 3rd. So it can take in
     // Hypotenuse and Perpendicular and return the base.
-
-
+    
+    public static void pythag(double a, double b){
+        System.out.println("--- Number 1 ---");
+        System.out.println("What is the base of the triangle?");
+        int base = keyboard.nextInt();
+        System.out.println("What is the perpindicular of the triangle?");
+        int perpindicular = keyboard.nextInt();
+        // Math.pow(a, b) for power
+        System.out.println("Hypotenuse is " + Math.sqrt((a*a) + (b*b)));
+        // CONNECT THIS TO THE PYTHAG BELOW
+    }
 
     
     // 2. Create a method that will calcuate my grade in the class. You can use the grade range as follows
@@ -38,16 +52,46 @@ public class MathGames {
     //      Hint 3: It is possible you might need to Cast a double to an int or vice versa
     //      Hint 4: You will probably need to use the Math.ceil() method 
 
-    
  
 
 
     // you do not need this main if you want to make a tester class
+    static Scanner keyboard = new Scanner(System.in);
      public static void main(String[] args){
+        //This is trying a Scanner
+        // System.out.println("--- Number 1 ---");
+        // System.out.println("What is the base of the triangle?");
+        // int base = keyboard.nextInt();
+        // System.out.println("What is the perpindicular of the triangle?");
+        // int perpindicular = keyboard.nextInt();
+        // System.out.println("Hypotenuse is " + Math.sqrt((base*base) + (perpindicular*perpindicular)));
         
+        pythag(4,3);
+        //This is for a constant number
+        // System.out.println();
+        // System.out.println("Number 1");
+        // int Side1 = 4;
+        // int Side2 = 3;
+        // String Side3 = "Hypotenuse";
+        // System.out.println(Side3 + " is " + (Math.sqrt((Side1*Side1) + (Side2*Side2))));
+
+        System.out.println();
+        System.out.println("--- Number 2 ---");
+        System.out.println("What is your number grade in the class?");
+        double grade = keyboard.nextInt();
+        grade = Math.ceil(grade);
+        if (grade <= 100 && grade >= 90)
+            System.out.println("You have an A :)");
+        if (grade <=89 && grade >= 80)
+            System.out.println("You have a B :)");
+        if (grade <=79 && grade >=70)
+            System.out.println("You have a C :|");
+        if (grade <= 69 && grade >=60)
+            System.out.println("You have a D :(");
+        if (grade <=59 && grade >=0)
+            System.out.println("You have a F >:|");
+
     }
-
-
-
+    
 
 }
