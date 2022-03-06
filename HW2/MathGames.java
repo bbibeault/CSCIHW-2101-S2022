@@ -57,8 +57,8 @@ public class MathGames {
             System.out.println("You have a D :(");
         if (grade <=59.0 && grade >=0.0)
             System.out.println("You have a F >:|");
+        // how to do ceiling?
     }
-    //how to do ceiling????
 
 
     // 3. Create a method that will calculate the tip on a bill per person
@@ -69,7 +69,6 @@ public class MathGames {
     // Hint 3: It is possible you might need to Cast a double to an int or vice versa
     // Hint 4: You will probably need to use the Math.ceil() method 
 
-    
     static void bill(){
         Scanner keyboard = new Scanner (System.in);
         int b;
@@ -79,17 +78,16 @@ public class MathGames {
         System.out.println("How many people are splitting the tip?");
         p = keyboard.nextInt();
         int t;
-        System.out.println("How much are we going to tip?");
+        System.out.println("What percentage are we going to tip?");
         t = keyboard.nextInt();
-        System.out.println(b + p + t);
-        
-
+        // percentage and math.ceil?
     }
+
+
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
          pythag();
          school();
          bill ();
-     }
-
+    }
 }
