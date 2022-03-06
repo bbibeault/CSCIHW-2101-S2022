@@ -72,12 +72,24 @@ public class MathGames {
     
     static void bill(){
         Scanner keyboard = new Scanner (System.in);
+        int b;
+        System.out.println("How much is the bill?");
+        b = keyboard.nextInt();
+        int p;
+        System.out.println("How many people are splitting the tip?");
+        p = keyboard.nextInt();
+        int t;
+        System.out.println("How much are we going to tip?");
+        t = keyboard.nextInt();
+        System.out.println(b + p + t);
+        
 
     }
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
          pythag();
          school();
+         bill ();
      }
 
 }
