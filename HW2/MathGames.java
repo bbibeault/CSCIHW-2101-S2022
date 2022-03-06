@@ -46,19 +46,19 @@ public class MathGames {
         Scanner keyboard = new Scanner (System.in);
         System.out.println("--- Number 2 ---");
         System.out.println("What is your number grade in the class?");
-        double grade = keyboard.nextInt();
-        grade = Math.ceil(grade);
-        if (grade <= 100 && grade >= 90)
+        double grade = Math.ceil(keyboard.nextInt());
+        if (grade <= 100.0 && grade >= 90.0)
             System.out.println("You have an A :)");
-        if (grade <=89 && grade >= 80)
+        if (grade <=89.0 && grade >= 80.0)
             System.out.println("You have a B :)");
-        if (grade <=79 && grade >=70)
+        if (grade <=79.0 && grade >=70.0)
             System.out.println("You have a C :|");
-        if (grade <= 69 && grade >=60)
+        if (grade <= 69.0 && grade >=60.0)
             System.out.println("You have a D :(");
-        if (grade <=59 && grade >=0)
+        if (grade <=59.0 && grade >=0.0)
             System.out.println("You have a F >:|");
     }
+    //how to do ceiling????
 
 
     // 3. Create a method that will calculate the tip on a bill per person
@@ -72,7 +72,7 @@ public class MathGames {
     
     static void bill(){
         Scanner keyboard = new Scanner (System.in);
-        
+
     }
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
