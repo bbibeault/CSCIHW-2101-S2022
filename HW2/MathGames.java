@@ -41,22 +41,23 @@ public class MathGames {
     //     // Hint 2: You will probably need to cast the double to an int
     //     // Hint 3: You will probably need to use the Math.ceil() method
 
-    // static void grade(){
-    //     System.out.println("--- Number 2 ---");
-    //     System.out.println("What is your number grade in the class?");
-    //     double grade = keyboard.nextInt();
-    //     grade = Math.ceil(grade);
-    //     if (grade <= 100 && grade >= 90)
-    //         System.out.println("You have an A :)");
-    //     if (grade <=89 && grade >= 80)
-    //         System.out.println("You have a B :)");
-    //     if (grade <=79 && grade >=70)
-    //         System.out.println("You have a C :|");
-    //     if (grade <= 69 && grade >=60)
-    //         System.out.println("You have a D :(");
-    //     if (grade <=59 && grade >=0)
-    //         System.out.println("You have a F >:|");
-    //     }
+    static void grade(){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.println("--- Number 2 ---");
+        System.out.println("What is your number grade in the class?");
+        double grade = keyboard.nextInt();
+        grade = Math.ceil(grade);
+        if (grade <= 100 && grade >= 90)
+            System.out.println("You have an A :)");
+        if (grade <=89 && grade >= 80)
+            System.out.println("You have a B :)");
+        if (grade <=79 && grade >=70)
+            System.out.println("You have a C :|");
+        if (grade <= 69 && grade >=60)
+            System.out.println("You have a D :(");
+        if (grade <=59 && grade >=0)
+            System.out.println("You have a F >:|");
+        }
 
     // // 3. Create a method that will calculate the tip on a bill per person
     // //      Method parameters: total bill, amount of people splitting the bill, percentage to tip.
@@ -72,7 +73,8 @@ public class MathGames {
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
          pythag();
-         
+         grade();
+
      }
 
 }
