@@ -29,6 +29,7 @@ public class MathGames {
         System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2)))); 
     }
 
+
     // // 2. Create a method that will calcuate my grade in the class. You can use the grade range as follows
     //     // A: 100 - 90
     //     // B:  89 - 80
@@ -41,7 +42,7 @@ public class MathGames {
     //     // Hint 2: You will probably need to cast the double to an int
     //     // Hint 3: You will probably need to use the Math.ceil() method
 
-    static void grade(){
+    static void school(){
         Scanner keyboard = new Scanner (System.in);
         System.out.println("--- Number 2 ---");
         System.out.println("What is your number grade in the class?");
@@ -57,24 +58,26 @@ public class MathGames {
             System.out.println("You have a D :(");
         if (grade <=59 && grade >=0)
             System.out.println("You have a F >:|");
-        }
-
-    // // 3. Create a method that will calculate the tip on a bill per person
-    // //      Method parameters: total bill, amount of people splitting the bill, percentage to tip.
-    // //      Note: I would like the total always rounded up to a whole number
-    // //      Hint 1: percentage can be made easier to work with if you divide by 100 so 18% is 18/100 = 0.18
-    // //      Hint 2: Using doubles will be helpful for when you need to calculate decimals
-    // //      Hint 3: It is possible you might need to Cast a double to an int or vice versa
-    // //      Hint 4: You will probably need to use the Math.ceil() method 
-
- 
+    }
 
 
+    // 3. Create a method that will calculate the tip on a bill per person
+    // Method parameters: total bill, amount of people splitting the bill, percentage to tip.
+    // Note: I would like the total always rounded up to a whole number
+    // Hint 1: percentage can be made easier to work with if you divide by 100 so 18% is 18/100 = 0.18
+    // Hint 2: Using doubles will be helpful for when you need to calculate decimals
+    // Hint 3: It is possible you might need to Cast a double to an int or vice versa
+    // Hint 4: You will probably need to use the Math.ceil() method 
+
+    
+    static void bill(){
+        Scanner keyboard = new Scanner (System.in);
+        
+    }
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
          pythag();
-         grade();
-
+         school();
      }
 
 }
