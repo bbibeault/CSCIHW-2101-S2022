@@ -17,38 +17,17 @@ public class MathGames {
     // Bonus points: Try to make it accept any 2 sides and return the 3rd. So it can take in
     // Hypotenuse and Perpendicular and return the base.
 
-
-
-
-
-
-    
-    // static Scanner keyboard = new Scanner(System.in);
-    // public static void pythag(double a, double b){
-    //     System.out.println("--- Number 1 ---");
-    //     System.out.println("What is the base of the triangle?");
-    //     int base = keyboard.nextInt();
-    //     System.out.println("What is the perpindicular of the triangle?");
-    //     int perpindicular = keyboard.nextInt();
-    //     System.out.println("Hypotenuse is " + Math.sqrt((a*a) + (b*b)));
-    //     // CONNECT THIS TO THE PYTHAG BELOW
-            
-    //     // This is trying a Scanner
-    //     // System.out.println("--- Number 1 ---");
-    //     // System.out.println("What is the base of the triangle?");
-    //     // int base = keyboard.nextInt();
-    //     // System.out.println("What is the perpindicular of the triangle?");
-    //     // int perpindicular = keyboard.nextInt();
-    //     // System.out.println("Hypotenuse is " + Math.sqrt((base*base) + (perpindicular*perpindicular)));
-        
-    //     // This is for a constant number
-    //     // System.out.println();
-    //     // System.out.println("Number 1");
-    //     // int Side1 = 4;
-    //     // int Side2 = 3;
-    //     // String Side3 = "Hypotenuse";
-    //     // System.out.println(Side3 + " is " + (Math.sqrt((Side1*Side1) + (Side2*Side2))));
-    // }
+    static void pythag(){
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("--- Number 1 ---");
+        int a;
+        System.out.println("What is the base of the traingle?");
+        a = keyboard.nextInt();
+        System.out.println("What is the perpendicular of the triangle?");
+        int b;
+        b = keyboard.nextInt();
+        System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2)))); 
+    }
 
     // // 2. Create a method that will calcuate my grade in the class. You can use the grade range as follows
     //     // A: 100 - 90
@@ -62,7 +41,7 @@ public class MathGames {
     //     // Hint 2: You will probably need to cast the double to an int
     //     // Hint 3: You will probably need to use the Math.ceil() method
 
-    //     public static void grade;{
+    // static void grade(){
     //     System.out.println("--- Number 2 ---");
     //     System.out.println("What is your number grade in the class?");
     //     double grade = keyboard.nextInt();
@@ -92,18 +71,8 @@ public class MathGames {
 
     // // you do not need this main if you want to make a tester class
      public static void main(String[] args){
-         Scanner keyboard = new Scanner(System.in);
-         int a;
-         System.out.println("What is the base of the traingle?");
-         a = keyboard.nextInt();
-         System.out.println("What is the perpendicular of the triangle?");
-         int b;
-         b = keyboard.nextInt();
-         System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2))));
+         pythag();
          
-
-
-
      }
 
 }
