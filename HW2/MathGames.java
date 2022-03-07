@@ -59,7 +59,7 @@ public class MathGames {
             System.out.println("You have a D :(");
         if (grade <=59.0 && grade >=0.0)
             System.out.println("You have a F >:|");
-        // how to do ceiling?
+        // how to do ceiling and double?
     }
 
 
