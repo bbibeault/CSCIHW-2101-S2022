@@ -19,6 +19,7 @@ public class MathGames {
 
     static void pythag(){
         Scanner keyboard = new Scanner(System.in);
+        System.out.println();
         System.out.println("--- Number 1 ---");
         int a;
         System.out.println("What is the base of the traingle?");
@@ -44,6 +45,7 @@ public class MathGames {
 
     static void school(){
         Scanner keyboard = new Scanner (System.in);
+        System.out.println();
         System.out.println("--- Number 2 ---");
         System.out.println("What is your number grade in the class?");
         double grade = Math.ceil(keyboard.nextInt());
@@ -71,6 +73,8 @@ public class MathGames {
 
     static void bill(){
         Scanner keyboard = new Scanner (System.in);
+        System.out.println();
+        System.out.println("--- Number 3 ---");
         int b;
         System.out.println("How much is the bill?");
         b = keyboard.nextInt();
@@ -80,6 +84,8 @@ public class MathGames {
         int t;
         System.out.println("What percentage are we going to tip?");
         t = keyboard.nextInt();
+        int at =(t/100);
+        System.out.println("The amount each person should tip is " + ((b*t)/p));
         // percentage and math.ceil?
     }
 
