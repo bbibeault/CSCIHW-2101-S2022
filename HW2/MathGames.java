@@ -87,6 +87,7 @@ public class MathGames {
         int at =(t/100);
         System.out.println("The amount each person should tip is " + ((b*t)/p));
         // percentage and math.ceil?
+        // This is a test!
     }
 
 
