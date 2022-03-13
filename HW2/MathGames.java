@@ -28,6 +28,7 @@ public class MathGames {
         int b;
         b = keyboard.nextInt();
         System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2)))); 
+        // how to accept decimals?
     }
 
 
@@ -60,6 +61,7 @@ public class MathGames {
         if (grade <=59.0 && grade >=0.0)
             System.out.println("You have a F >:|");
         // how to do ceiling and double?
+        // how to accept decimals?
     }
 
 
