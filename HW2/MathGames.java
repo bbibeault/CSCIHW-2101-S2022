@@ -21,7 +21,7 @@ public class MathGames {
         Scanner keyboard = new Scanner(System.in);
         System.out.println();
         System.out.println("--- Number 1 ---");
-        System.out.println("What is the base of the traingle?");
+        System.out.println("What is the base of the triangle?");
         double a = (keyboard.nextDouble());
         System.out.println("What is the perpendicular of the triangle?");
         double b = (keyboard.nextDouble());
@@ -57,8 +57,6 @@ public class MathGames {
             System.out.println("You have a D :(");
         if (grade <=59.0 && grade >=0.0)
             System.out.println("You have a F >:|");
-        // how to do ceiling and double?
-        // how to accept decimals?
     }
 
 
@@ -74,17 +72,16 @@ public class MathGames {
         Scanner keyboard = new Scanner (System.in);
         System.out.println();
         System.out.println("--- Number 3 ---");
-        int b;
         System.out.println("How much is the bill?");
-        b = keyboard.nextInt();
+        double b = keyboard.nextDouble();
         int p;
         System.out.println("How many people are splitting the tip?");
         p = keyboard.nextInt();
         int t;
         System.out.println("What percentage are we going to tip?");
         t = keyboard.nextInt();
-        int at =(t/100);
-        System.out.println("The amount each person should tip is " + ((b*t)/p));
+        double at =(t/100);
+        System.out.println("The amount each person should tip is " + ((b*at)/p));
         // percentage and math.ceil?
         // This is a test!
     }
