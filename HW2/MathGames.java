@@ -73,7 +73,7 @@ public class MathGames {
         System.out.println();
         System.out.println("--- Number 3 ---");
         System.out.println("How much is the bill?");
-        double b = keyboard.nextDouble();
+        double b = Math.ceil(keyboard.nextDouble());
         int p;
         System.out.println("How many people are splitting the tip?");
         p = keyboard.nextInt();
