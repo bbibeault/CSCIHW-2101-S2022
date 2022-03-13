@@ -49,7 +49,7 @@ public class MathGames {
         System.out.println();
         System.out.println("--- Number 2 ---");
         System.out.println("What is your number grade in the class?");
-        double grade = Math.ceil(keyboard.nextInt());
+        double grade = Math.ceil(keyboard.nextDouble());
         if (grade <= 100.0 && grade >= 90.0)
             System.out.println("You have an A :)");
         if (grade <=89.0 && grade >= 80.0)
