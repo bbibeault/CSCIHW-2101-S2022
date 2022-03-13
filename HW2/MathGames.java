@@ -77,13 +77,10 @@ public class MathGames {
         int p;
         System.out.println("How many people are splitting the tip?");
         p = keyboard.nextInt();
-        int t;
         System.out.println("What percentage are we going to tip?");
-        t = keyboard.nextInt();
+        double t = keyboard.nextDouble();
         double at =(t/100);
         System.out.println("The amount each person should tip is " + ((b*at)/p));
-        // percentage and math.ceil?
-        // This is a test!
     }
 
 
