@@ -21,14 +21,11 @@ public class MathGames {
         Scanner keyboard = new Scanner(System.in);
         System.out.println();
         System.out.println("--- Number 1 ---");
-        int a;
         System.out.println("What is the base of the traingle?");
-        a = keyboard.nextInt();
+        double a = (keyboard.nextDouble());
         System.out.println("What is the perpendicular of the triangle?");
-        int b;
-        b = keyboard.nextInt();
-        System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2)))); 
-        // how to accept decimals?
+        double b = (keyboard.nextDouble());
+        System.out.println("The hypotenuse is " + Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2))));
     }
 
 
