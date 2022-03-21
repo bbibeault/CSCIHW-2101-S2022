@@ -20,25 +20,25 @@ public class BankAccountTester {
         System.out.println(menuSelection);
         
         if(menuSelection == 1){
-            System.out.println("Getting Account Balance...");
-            System.out.println("Total Balance: $"+name_checking.getBalance());
+            System.out.println("Getting account balance...");
+            System.out.println("Total balance: $"+name_checking.getBalance());
 
         }else if (menuSelection == 2){
             System.out.println("Please enter the amount to deposit");
             double depositAmount = keyboard.nextDouble();
             name_checking.deposit(depositAmount);
-            System.out.println("Amount: $"+depositAmount + " Was Deposited");
-            System.out.println("Total Balance: $" + name_checking.getBalance());
+            System.out.println("Amount: $"+depositAmount + " was deposited");
+            System.out.println("Total balance: $" + name_checking.getBalance());
 
         }else if (menuSelection == 3){
             System.out.println("Please enter the amount to withdraw");
             double withdrawAmount = keyboard.nextDouble();
             name_checking.withdraw(withdrawAmount);
             
-            System.out.println("Amount: $"+withdrawAmount + " Was Withdrawn");
-            System.out.println("Total Balance: $" + name_checking.getBalance());
+            System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
+            System.out.println("Total balance: $" + name_checking.getBalance());
 
-        }else if(menuSelection == 4){
+        }else if (menuSelection == 4){
 
             System.out.println("Please enter the amount of years");
             int years = keyboard.nextInt();
