@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class BankAccountTester {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Hello Welcome! Please Enter your Name:");
+        System.out.println("Hello and welcome! Please enter your name:");
         BankAccount gregChecking = new BankAccount(20000);
         String name = keyboard.nextLine();
-        System.out.println("Welcome " + name + ", How much would you like start your account with?");
+        System.out.println("Welcome " + name + "! How much would you like start your account with?");
         double startAmount = keyboard.nextDouble();
         BankAccount name_checking = new BankAccount(startAmount);
 
-        System.out.println("Great! "+ name+" Your starting balance is: $"+ name_checking.getBalance());
+        System.out.println("Great! " + name +", your starting balance is: $"+ name_checking.getBalance());
         
         int menuSelection = BankAccount.menu();
         System.out.println(menuSelection);
