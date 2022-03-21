@@ -35,6 +35,7 @@ public class BankAccountTester {
             double withdrawAmount = keyboard.nextDouble();
             name_checking.withdraw(withdrawAmount);
             
+            
             System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
             System.out.println("Total balance: $" + name_checking.getBalance());
 
