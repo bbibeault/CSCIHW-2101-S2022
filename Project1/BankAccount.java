@@ -31,7 +31,8 @@ public class BankAccount {
         balance = balance - amount;    
     }
 
-    public void overdraft(double amount){
+    public void overdraft(BankAccount amount){
+
     }
 
 
