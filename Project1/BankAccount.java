@@ -26,6 +26,11 @@ public class BankAccount {
 
     public void withdraw(double amount){
         balance = balance - amount;
+        if (balance > amount)
+        withdraw(amount);
+        else
+        System.out.println("You have insufficient funds, would you like to withdraw this amount of money still? You will be charged an overdraft fee of $35.");
+        
     }
 
 
