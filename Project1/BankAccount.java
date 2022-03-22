@@ -5,6 +5,7 @@ import java.util.Scanner;
 import javax.sql.rowset.spi.SyncResolver;
 
 public class BankAccount {
+    
     private double balance;
 
     
@@ -69,9 +70,4 @@ public class BankAccount {
 
 
     }
-
-
-
-
-
 }
