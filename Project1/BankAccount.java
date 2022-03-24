@@ -2,6 +2,7 @@ package Project1;
 
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner14;
 import javax.sql.rowset.spi.SyncResolver;
 
 public class BankAccount {
@@ -32,7 +33,12 @@ public class BankAccount {
     }
 
     public void withdraw(double amount){
-        balance = balance - amount;    
+        balance = balance - amount;
+    if(balance < amount);
+        System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed?");
+    else if(balance > amount);
+         return 
+        
     }
 
     public void overdraft(BankAccount amount){
