@@ -34,9 +34,9 @@ public class BankAccountTester {
             System.out.println("Please enter the amount to withdraw");
             double withdrawAmount = keyboard.nextDouble();
            
-            // name_checking.withdraw(withdrawAmount);
-            // System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
-            // System.out.println("Total balance: $" + name_checking.getBalance());
+            name_checking.withdraw(withdrawAmount);
+            System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
+            System.out.println("Total balance: $" + name_checking.getBalance());
 
         }else if (menuSelection == 4){
 
@@ -51,5 +51,7 @@ public class BankAccountTester {
         }else{
             System.out.println("Error: No Valid Selection");
         }
+        name_checking.overdraft(name_checking, 500);
+        System.out.println(name_checking.getBalance());
     }
 }

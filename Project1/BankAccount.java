@@ -33,16 +33,18 @@ public class BankAccount {
     }
 
     public void withdraw(double amount){
-        if(balance < amount)
-            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed?");
-            // why not only doing 1?
-        else if(balance > amount)
-            System.out.println(amount + " has been withdrawn. Thank you!");
-            balance = balance - amount;
+        balance = balance - amount;
     }
 
-    public void overdraft(BankAccount amount){
-
+    public void overdraft(BankAccount bank, double amount){
+        if(bank.getBalance() < amount){
+            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed?");
+        }
+            // why not only doing 1?
+        else if(bank.getBalance()  >= amount){
+            bank.withdraw(amount);
+            System.out.println(amount + " has been withdrawn. Thank you!");
+        }
     }
 
 
