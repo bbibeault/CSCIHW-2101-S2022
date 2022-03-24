@@ -8,6 +8,10 @@ public class BankAccount {
     
     private double balance;
 
+    // Input Main code? Because it runs out of BankAccountTester
+    // Dont see where the Methods are ran and linked if they are run together
+    // Just need help getting started haha
+
     
     public BankAccount(){
         balance = 0;
