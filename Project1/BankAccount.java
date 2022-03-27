@@ -40,14 +40,18 @@ public class BankAccount {
                 intOpt = keyboard.nextInt();
                 if(intOpt == 1){
                     // do flat rate interest
-                }else {
+                }else if(intOpt == 2){
                     // do compound interest
+                }else{
+                    System.out.println("Please select a valid option");
                 }
-            }else {
+            }else if(savingsChoice == 2){
                     System.out.println("Not a problem. Your starting balance is " + startAmount);
-                }
+            }else{
+                System.out.println("Please select a valid option");
             }
         }
+    }
 
  //test
     public void deposit(double amount){
@@ -75,8 +79,8 @@ public class BankAccount {
             }else{
                 System.out.println("Please select a valid option");
             }
+        }
     }
-}
 
     public void monthlyfee(){
         withdraw(10);
@@ -101,7 +105,7 @@ public class BankAccount {
         Scanner input = new Scanner(System.in);
 
         /************************ */
-        System.out.println("Please select and option:");
+        System.out.println("Please select an option:");
         System.out.println("-------------------------");
         System.out.println("1: Get Balance");
         System.out.println("2: Deposit");
@@ -117,5 +121,5 @@ public class BankAccount {
         return selection;
     }
 
-    }
+}
 
