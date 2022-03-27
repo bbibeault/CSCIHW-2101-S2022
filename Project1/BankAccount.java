@@ -33,13 +33,13 @@ public class BankAccount {
             savingsChoice = keyboard.nextInt();
             if(savingsChoice == 1){
                 // BankAccount name_savings = new BankAccount(startAmount);
-                System.out.println("Thank you for creating a savings account with us! Your balance is " + startAmount + ". Would you like to accumulate interest simply or compoundly? Click 1 for simple or 2 for compound.");
+                System.out.println("Thank you for creating a savings account with us! Your balance is " + startAmount + ". Would you like to accumulate interest by a flat rate or compoundly? Click 1 for flat rate or 2 for compound.");
                 int intOpt;
                 int intY = 1;
                 int intN = 2;
                 intOpt = keyboard.nextInt();
                 if(intOpt == 1){
-                    // do simple interest
+                    // do flat rate interest
                 }else {
                     // do compound interest
                 }
