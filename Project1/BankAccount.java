@@ -66,7 +66,7 @@ public class BankAccount {
         Scanner keyboard = new Scanner (System.in);
         if(bank.getBalance() > withdrawAmount){
             bank.withdraw(withdrawAmount);
-        }else {
+        }else{
             System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
             int choice;
             int Yes = 1;
