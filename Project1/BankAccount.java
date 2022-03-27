@@ -26,13 +26,14 @@ public class BankAccount {
     public void savings(BankAccount bank, double startAmount) {
         Scanner keyboard = new Scanner (System.in);
         if(startAmount >= 10000) {
-            System.out.println("Would you like to start a Savings Account that can accumulate interest?");
+            System.out.println("Would you like to start a Savings Account that can accumulate interest? Click 1 for yes or 2 for no.");
             int savingsChoice;
             int savingsY = 1;
             int savingsN = 2;
             savingsChoice = keyboard.nextInt();
             if(savingsChoice == 1){
                 BankAccount name_savings = new BankAccount(startAmount);
+                System.out.println(name_savings);
             }else {
                     System.out.println("Not a problem. Your starting balance is " + startAmount);
                 }
