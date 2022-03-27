@@ -33,7 +33,7 @@ public class BankAccount {
             savingsChoice = keyboard.nextInt();
             if(savingsChoice == 1){
                 BankAccount name_savings = new BankAccount(startAmount);
-                System.out.println(name_savings);
+                System.out.println("Thank you for creating a savings account with us! Your balance is " + name_savings);
             }else {
                     System.out.println("Not a problem. Your starting balance is " + startAmount);
                 }
