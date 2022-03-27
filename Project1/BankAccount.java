@@ -42,11 +42,13 @@ public class BankAccount {
                 intOpt = keyboard.nextInt();
                 if(intOpt == 1){
                         // Simple Interest = (P × R × T)/100
+                        // calculator??
                     double p = startAmount;
                     double r = .001;
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
                     int t = keyboard.nextInt();
                     System.out.println("The amount of interest you would earn is " + (p*r*t)/100);
+
                 }else if(intOpt == 2){
                     double P = startAmount;
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
@@ -64,13 +66,6 @@ public class BankAccount {
             }
         }
     }
-
-        // P(1+ R/n)^(nt) - P 
-    // P = principal
-    // t = years
-    // R = annual interest rate
-    // n = # of times its compunded
-    // PEMDAS 
 
  //test
     public void deposit(double amount){
