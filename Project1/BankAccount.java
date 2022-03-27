@@ -87,6 +87,13 @@ public class BankAccount {
         withdraw(10);
     }
 
+    public void transfer(BankAccount bank, BankAccount gregChecking, double amount){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.println("How much money would you like to transfer to gregChecking?");
+        double m = keyboard.nextInt();
+        System.out.println(bank);
+    }
+
     // P(1+ R/n)^(nt) - P 
     // P = principal
     // t = years
@@ -126,7 +133,6 @@ public class BankAccount {
 
         return selection;
     }
-
 }
 
 // return menu after invalid selection?

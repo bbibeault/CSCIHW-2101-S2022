@@ -46,7 +46,8 @@ public class BankAccountTester {
             name_checking.calcInterest(name_checking.getBalance(), years, 0.15, 12);
 
         }else if (menuSelection == 5){
-            // for transfer
+            name_checking.transfer(name_checking.getBalance(), gregChecking, amount);
+            int amount = keyboard.nextInt();
 
         }else if (menuSelection == 0){
             System.out.println("Have a nice day!");
