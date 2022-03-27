@@ -36,7 +36,7 @@ public class BankAccountTester {
             // name_checking.withdraw(withdrawAmount);
             name_checking.overdraft(name_checking, withdrawAmount);
             // System.out.println(name_checking.getBalance());
-            System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
+            // System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
             System.out.println("Total balance: $" + name_checking.getBalance());
 
         }else if (menuSelection == 4){

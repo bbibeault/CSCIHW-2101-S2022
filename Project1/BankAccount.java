@@ -40,17 +40,23 @@ public class BankAccount {
 
     public void overdraft(BankAccount bank, double withdrawAmount){
         Scanner keyboard = new Scanner (System.in);
-        if(bank.getBalance() >= withdrawAmount){
+        if(bank.getBalance() > withdrawAmount){
             bank.withdraw(withdrawAmount);
-        }else if(bank.getBalance() < withdrawAmount) {
-            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
-            int Y = '1';
-            int N = '2';
-            Y = keyboard.nextInt();
-                bank.withdraw(withdrawAmount + 35);
-            N = keyboard.nextInt();
-            System.out.println("Your transacion has been cancelled.");
+        }else {
+            System.out.println("Why");
         }
+
+
+
+        // }else if(bank.getBalance() < withdrawAmount) {
+        //     System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
+        //     int Y = '1';
+        //     int N = '2';
+        //     Y = keyboard.nextInt();
+        //         bank.withdraw(withdrawAmount + 35);
+        //     N = keyboard.nextInt();
+        //     System.out.println("Your transacion has been cancelled.");
+        // }
     }
 
     public void monthlyfee(){
