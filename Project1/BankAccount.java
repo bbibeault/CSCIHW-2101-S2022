@@ -23,6 +23,12 @@ public class BankAccount {
         return balance;
     }
 
+    public void savings(BankAccount bank, double startAmount) {
+        if(startAmount >= 10000)
+            System.out.println("Would you like to start a Savings Account that can accumulate interest?");
+            // how to do input with if function such as yer or no
+    }
+
  //test
     public void deposit(double amount){
         balance = balance + amount;
@@ -38,6 +44,7 @@ public class BankAccount {
             bank.withdraw(withdrawAmount);
         }else {
             System.out.println("Why");
+            // how to do input with if function
         }
 
         // }else if(bank.getBalance() < withdrawAmount) {
@@ -89,4 +96,6 @@ public class BankAccount {
 
 
     }
-}
+
+    }
+

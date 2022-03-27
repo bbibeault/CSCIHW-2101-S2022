@@ -14,6 +14,8 @@ public class BankAccountTester {
         double startAmount = keyboard.nextDouble();
         // input savings option here
         BankAccount name_checking = new BankAccount(startAmount);
+        name_checking.savings(name_checking, startAmount);
+
 
         System.out.println("Great! " + name +", your starting balance is: $"+ name_checking.getBalance());
         
