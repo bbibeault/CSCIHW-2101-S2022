@@ -49,6 +49,8 @@ public class BankAccountTester {
             name_checking.transfer(name_checking.getBalance(), gregChecking);
             int amount = keyboard.nextInt();
 
+            // involve subtracting from name_checking and adding to gregChecking and then displaying balance for both
+
         }else if (menuSelection == 0){
             System.out.println("Have a nice day!");
         }else{
