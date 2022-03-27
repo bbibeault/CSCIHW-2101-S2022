@@ -19,7 +19,6 @@ public class BankAccount {
         balance = initalBalance;
     }
 
-
     public double getBalance(){
         return balance;
     }
