@@ -138,4 +138,5 @@ public class BankAccount {
 // return menu after invalid selection?
 // calculating interest, confused on formaulas and what is what
 // setting up parameters for interest
+// setting up amount parameter for transfer
 
