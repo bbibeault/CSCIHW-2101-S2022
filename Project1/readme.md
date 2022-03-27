@@ -41,7 +41,7 @@ INTEREST QUESTIONS
 
     Make a return similar to the one for compound interest
 
-VERY CLOSE (need to calc interest)
+DONE
 4. Create a savings account option. If the user creates a bank account with 10,000 or more, prompt if they want to create a savings account. This will accept an inital value and a selection on compound or flat rate interest. The selection will 
 then ask the user for the variables they would like for instance the Principal and years
 but with fixed amounts for the apy. For the compount the APY is 0.0001 
