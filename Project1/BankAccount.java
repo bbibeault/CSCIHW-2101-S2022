@@ -3,6 +3,7 @@ package Project1;
 import java.nio.channels.SelectionKey;
 import java.util.Scanner;
 
+import javax.lang.model.type.NoType;
 import javax.lang.model.util.ElementScanner14;
 import javax.net.ssl.KeyStoreBuilderParameters;
 import javax.sql.rowset.spi.SyncResolver;
@@ -40,9 +41,19 @@ public class BankAccount {
                 int intN = 2;
                 intOpt = keyboard.nextInt();
                 if(intOpt == 1){
-                    // do flat rate interest
+                        // Simple Interest = (P × R × T)/100
+                    double p = startAmount;
+                    double r = .001;
+                    System.out.println("How many years would you like to gain interest on this Savings Account?");
+                    int t = keyboard.nextInt();
+                    System.out.println("The amount of interest you would earn is " + (p*r*t));
                 }else if(intOpt == 2){
-                    // do compound interest
+                    double P = startAmount;
+                    System.out.println("How many years would you like to gain interest on this Savings Account?");
+                    int t = keyboard.nextInt();
+                    double R = .0001;
+                    int n = 4;
+                    System.out.println("The amount of interest you would earn is " + P * Math.pow(1 + (R/n), n*t));
                 }else{
                     System.out.println("Please select a valid option");
                 }
@@ -53,6 +64,13 @@ public class BankAccount {
             }
         }
     }
+
+        // P(1+ R/n)^(nt) - P 
+    // P = principal
+    // t = years
+    // R = annual interest rate
+    // n = # of times its compunded
+    // PEMDAS 
 
  //test
     public void deposit(double amount){
