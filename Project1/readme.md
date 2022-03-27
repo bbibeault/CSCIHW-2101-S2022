@@ -23,7 +23,7 @@ DONE
         else 
     Hint 4: Method should look something like overDraft(BankAccount bank, double value)
 
-
+SETTING UP PARAMETERS
 2. Create a method for transfer Money. The method should take in 2 bank account objects and an amount to transfer. You can assume the second account is gregChecking
     Hint 1. This will require you to take in 3 parameters at min
         Bank Account 1, Bank Account 2, Amount to transfer

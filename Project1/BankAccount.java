@@ -87,11 +87,11 @@ public class BankAccount {
         withdraw(10);
     }
 
-    public void transfer(BankAccount bank, BankAccount gregChecking, double amount){
+    public void transfer(BankAccount bank, BankAccount gregChecking){
         Scanner keyboard = new Scanner (System.in);
         System.out.println("How much money would you like to transfer to gregChecking?");
         double m = keyboard.nextInt();
-        System.out.println(bank);
+        System.out.println();
     }
 
     // P(1+ R/n)^(nt) - P 
