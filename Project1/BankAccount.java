@@ -41,21 +41,18 @@ public class BankAccount {
                 int intN = 2;
                 intOpt = keyboard.nextInt();
                 if(intOpt == 1){
-                        // Simple Interest = (P × R × T)/100
-                        // calculator??
-                    double p = startAmount;
+                    double p = bank.getBalance();
                     double r = .001;
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
-                    int t = keyboard.nextInt();
-                    System.out.println("The amount of interest you would earn is " + (p*r*t)/100);
-
+                    double t = keyboard.nextInt();
+                    bank.simpleIntCalc(p, r, t);
                 }else if(intOpt == 2){
-                    double P = startAmount;
+                    double P = bank.getBalance();
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
-                    int t = keyboard.nextInt();
+                    double t = keyboard.nextDouble();
                     double R = .0001;
                     int n = 4;
-                    System.out.println("Your total account balance after " + t + " years would be " + P * Math.pow(1 + (R/n), n*t));
+                    bank.calcInterest(P, t, R, n);
                 }else{
                     System.out.println("Please select a valid option");
                 }
@@ -100,11 +97,11 @@ public class BankAccount {
         withdraw(10);
     }
 
-    public void transfer(BankAccount bank, BankAccount gregChecking, double amount){
-        Scanner keyboard = new Scanner (System.in);
-        System.out.println("How much money would you like to transfer to gregChecking?");
-        double m = keyboard.nextInt();
-        System.out.println();
+    public void transfer(BankAccount bank, BankAccount bank2, double amount){
+        bank.withdraw(amount);
+        bank2.deposit(amount);        
+        System.out.println("The transfer has been completed. The balance of bank1 is " + bank.getBalance());
+        System.out.println("The balance of bank2 is " + bank2.getBalance());
     }
 
     // P(1+ R/n)^(nt) - P 
@@ -114,7 +111,7 @@ public class BankAccount {
     // n = # of times its compunded
     // PEMDAS 
 
-    public void calcInterest(double p, int t, double r, int n){
+    public void calcInterest(double p, double t, double r, int n){
         double amount =  p * Math.pow(1 + (r/n), n*t);
         double compinterest = amount - p;
         System.out.println("Compund Interest after "+ t + " years: "+ compinterest);
@@ -122,7 +119,7 @@ public class BankAccount {
     }
 
     // Simple Interest = (P × R × T)/100
-    public void simpleIntCalc(int p, double r, int t){
+    public void simpleIntCalc(double p, double r, double t){
         Scanner input = new Scanner(System.in);
         System.out.println("Interest would be" + (p * r * t)/100);
     }
