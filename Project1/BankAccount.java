@@ -34,7 +34,6 @@ public class BankAccount {
             int savingsN = 2;
             savingsChoice = keyboard.nextInt();
             if(savingsChoice == 1){
-                // BankAccount name_savings = new BankAccount(startAmount);
                 System.out.println("Thank you for creating a savings account with us! Your balance is " + startAmount + ". Would you like to accumulate interest by a flat rate or compoundly? Click 1 for flat rate or 2 for compound.");
                 int intOpt;
                 int intY = 1;
@@ -104,13 +103,6 @@ public class BankAccount {
         System.out.println("The balance of bank2 is " + bank2.getBalance());
     }
 
-    // P(1+ R/n)^(nt) - P 
-    // P = principal
-    // t = years
-    // R = annual interest rate
-    // n = # of times its compunded
-    // PEMDAS 
-
     public void calcInterest(double p, double t, double r, int n){
         double amount =  p * Math.pow(1 + (r/n), n*t);
         double compinterest = amount - p;
@@ -118,7 +110,6 @@ public class BankAccount {
         System.out.println("Amount after "+ t +" years: "+ amount);
     }
 
-    // Simple Interest = (P × R × T)/100
     public void simpleIntCalc(double p, double r, double t){
         Scanner input = new Scanner(System.in);
         System.out.println("Interest would be" + (p * r * t)/100);
@@ -144,9 +135,3 @@ public class BankAccount {
         return selection;
     }
 }
-
-// return menu after invalid selection?
-// calculating interest, confused on formaulas and what is what
-// setting up parameters for interest
-// setting up amount parameter for transfer
-
