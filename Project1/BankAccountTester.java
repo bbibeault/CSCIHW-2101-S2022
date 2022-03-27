@@ -46,7 +46,7 @@ public class BankAccountTester {
             name_checking.calcInterest(name_checking.getBalance(), years, 0.15, 12);
 
         }else if (menuSelection == 5){
-            name_checking.transfer(name_checking.getBalance(), gregChecking, amount);
+            name_checking.transfer(name_checking.getBalance(), gregChecking, //here?);
             int amount = keyboard.nextInt();
 
         }else if (menuSelection == 0){
