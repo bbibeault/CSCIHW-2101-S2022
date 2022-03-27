@@ -87,6 +87,7 @@ public class BankAccount {
         System.out.println("3: Withdraw");
         System.out.println("4: Compund Interest");
         System.out.println("5: Transfer");
+        System.out.println("6: Initialize Savings Account");
         System.out.println("0: Quit");
         System.out.println("-------------------------");
 
