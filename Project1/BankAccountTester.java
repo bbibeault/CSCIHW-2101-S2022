@@ -12,6 +12,7 @@ public class BankAccountTester {
         String name = keyboard.nextLine();
         System.out.println("Welcome " + name + "! How much would you like start your account with?");
         double startAmount = keyboard.nextDouble();
+        // input savings option here
         BankAccount name_checking = new BankAccount(startAmount);
 
         System.out.println("Great! " + name +", your starting balance is: $"+ name_checking.getBalance());
@@ -40,7 +41,6 @@ public class BankAccountTester {
             System.out.println("Total balance: $" + name_checking.getBalance());
 
         }else if (menuSelection == 4){
-
             System.out.println("Please enter the amount of years");
             int years = keyboard.nextInt();
             name_checking.calcInterest(name_checking.getBalance(), years, 0.15, 12);
