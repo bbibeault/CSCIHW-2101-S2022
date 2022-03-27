@@ -48,9 +48,6 @@ public class BankAccountTester {
         }else if (menuSelection == 5){
             // for transfer
 
-        }else if (menuSelection == 6){
-            // for savings account off the start
-
         }else if (menuSelection == 0){
             System.out.println("Have a nice day!");
         }else{

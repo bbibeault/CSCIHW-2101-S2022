@@ -30,8 +30,8 @@ DONE
     Hint 2. The math involved would be two folded.
          You need to subtract from one bank account and add to another
     Hint 3. We already have methods for withdrawing and depositing. Be sure to use them.
-   
-    
+
+INTEREST QUESTIONS    
 3. Create a method to calculate simple interest.
     The formula to use is
     Simple Interest = (P × R × T)/100

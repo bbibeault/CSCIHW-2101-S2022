@@ -1,5 +1,6 @@
 package Project1;
 
+import java.nio.channels.SelectionKey;
 import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner14;
@@ -118,7 +119,6 @@ public class BankAccount {
         System.out.println("3: Withdraw");
         System.out.println("4: Compund Interest");
         System.out.println("5: Transfer");
-        System.out.println("6: Initialize Savings Account");
         System.out.println("0: Quit");
         System.out.println("-------------------------");
 
@@ -128,4 +128,8 @@ public class BankAccount {
     }
 
 }
+
+// return menu after invalid selection?
+// calculating interest, confused on formaulas and what is what
+// setting up parameters for interest
 
