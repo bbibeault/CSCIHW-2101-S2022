@@ -24,8 +24,9 @@ public class BankAccount {
     }
 
     public void savings(BankAccount bank, double startAmount) {
-        if(startAmount >= 10000)
+        if(startAmount >= 10000) {
             System.out.println("Would you like to start a Savings Account that can accumulate interest?");
+        }
             // how to do input with if function such as yer or no
     }
 
