@@ -26,14 +26,23 @@ public class BankAccount {
     public void savings(BankAccount bank, double startAmount) {
         Scanner keyboard = new Scanner (System.in);
         if(startAmount >= 10000) {
-            System.out.println("Would you like to start a Savings Account that can accumulate interest? Click 1 for yes or 2 for no.");
+            System.out.println("Would you like to start a Savings Account that can accumulate interest? Click 1 for Yes or 2 for No.");
             int savingsChoice;
             int savingsY = 1;
             int savingsN = 2;
             savingsChoice = keyboard.nextInt();
             if(savingsChoice == 1){
-                BankAccount name_savings = new BankAccount(startAmount);
-                System.out.println("Thank you for creating a savings account with us! Your balance is " + name_savings);
+                // BankAccount name_savings = new BankAccount(startAmount);
+                System.out.println("Thank you for creating a savings account with us! Your balance is " + startAmount + ". Would you like to accumulate interest simply or compoundly? Click 1 for simple or 2 for compound.");
+                int intOpt;
+                int intY = 1;
+                int intN = 2;
+                intOpt = keyboard.nextInt();
+                if(intOpt == 1){
+                    // do simple interest
+                }else {
+                    // do compound interest
+                }
             }else {
                     System.out.println("Not a problem. Your starting balance is " + startAmount);
                 }
