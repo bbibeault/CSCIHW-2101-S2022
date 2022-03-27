@@ -47,24 +47,11 @@ public class BankAccount {
             int Y = '1';
             int N = '2';
             Y = keyboard.nextInt();
-                bank.withdraw( + 35);
+                bank.withdraw(withdrawAmount + 35);
             N = keyboard.nextInt();
             System.out.println("Your transacion has been cancelled.");
         }
     }
-
-            // System.out.println(withdrawAmount + " has been withdrawn. Thank you!");
-        // }else if(bank.getBalance() < withdrawAmount){
-        //     System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
-        //     int Y;
-        //     int N;
-        //     Y = keyboard.nextInt();
-        //         bank.withdraw(withdrawAmount + 35);
-        //     N = keyboard.nextInt();
-        //     System.out.println("Your transaction has been cancelled.");
-            // running both, looking for a if/then statement?
-        // }
-
 
     public void monthlyfee(){
         withdraw(10);
