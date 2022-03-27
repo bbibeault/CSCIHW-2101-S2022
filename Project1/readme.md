@@ -1,5 +1,6 @@
 Add the following methods to bank account:
 
+DONE
 1. Overdraft method
     The Overdraft Method should be used when I withdraw money 
     and if I have $0 or less in my account it will charge me a 
@@ -20,14 +21,16 @@ Add the following methods to bank account:
         else if 
         else if
         else 
-    Hint 4: Method should look something like overDraft(BankAccount bank, double value) DONE DONE DONE
-          
+    Hint 4: Method should look something like overDraft(BankAccount bank, double value)
+
+
 2. Create a method for transfer Money. The method should take in 2 bank account objects and an amount to transfer. You can assume the second account is gregChecking
     Hint 1. This will require you to take in 3 parameters at min
         Bank Account 1, Bank Account 2, Amount to transfer
     Hint 2. The math involved would be two folded.
          You need to subtract from one bank account and add to another
     Hint 3. We already have methods for withdrawing and depositing. Be sure to use them.
+   
     
 3. Create a method to calculate simple interest.
     The formula to use is
@@ -38,12 +41,13 @@ Add the following methods to bank account:
 
     Make a return similar to the one for compound interest
 
+VERY CLOSE (need to calc interest)
 4. Create a savings account option. If the user creates a bank account with 10,000 or more, prompt if they want to create a savings account. This will accept an inital value and a selection on compound or flat rate interest. The selection will 
 then ask the user for the variables they would like for instance the Principal and years
 but with fixed amounts for the apy. For the compount the APY is 0.0001 
 and for the simple interest account it is 0.001. 
 NOTE: The value of n im compounded must be 4 for quarterly 
 
-
+DONE
 5. Incorporate the methods in the interactive prompt
-    Add Options for transfering and Setting up a savings account Include error checking in logic DONE DONE DONE
+    Add Options for transfering and Setting up a savings account Include error checking in logic
