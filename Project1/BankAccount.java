@@ -46,7 +46,7 @@ public class BankAccount {
                     double r = .001;
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
                     int t = keyboard.nextInt();
-                    System.out.println("The amount of interest you would earn is " + (p*r*t));
+                    System.out.println("The amount of interest you would earn is " + (p*r*t)/100);
                 }else if(intOpt == 2){
                     double P = startAmount;
                     System.out.println("How many years would you like to gain interest on this Savings Account?");
