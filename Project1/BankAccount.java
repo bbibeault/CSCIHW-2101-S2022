@@ -44,9 +44,20 @@ public class BankAccount {
         if(bank.getBalance() > withdrawAmount){
             bank.withdraw(withdrawAmount);
         }else {
-            System.out.println("Why");
-            // how to do input with if function
+            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
+            int choice;
+
+            int Yes = 1;
+            int No = 2;
+
+            choice = keyboard.nextInt();
+            if(choice == 1){
+                bank.withdraw(withdrawAmount + 35);
+
+        }else {
+            System.out.println("Your transaction has been cancelled");
         }
+    }
 
         // }else if(bank.getBalance() < withdrawAmount) {
         //     System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
@@ -69,7 +80,7 @@ public class BankAccount {
     // R = annual interest rate
     // n = # of times its compunded
     // PEMDAS 
-    
+
     public void calcInterest(double p, int t, double r, int n){
         double amount =  p * Math.pow(1 + (r/n), n*t);
         double compinterest = amount - p;
@@ -95,10 +106,7 @@ public class BankAccount {
 
         selection = input.nextInt();
 
-
         return selection;
-
-
     }
 
     }

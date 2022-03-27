@@ -56,7 +56,7 @@ public class BankAccountTester {
         }else{
             System.out.println("Error: No Valid Selection");
         }
-        name_checking.overdraft(name_checking, 500);
-        System.out.println(name_checking.getBalance());
+        // name_checking.overdraft(name_checking, 500);
+        // System.out.println(name_checking.getBalance());
     }
 }
