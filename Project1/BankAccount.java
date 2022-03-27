@@ -69,6 +69,7 @@ public class BankAccount {
     // R = annual interest rate
     // n = # of times its compunded
     // PEMDAS 
+    
     public void calcInterest(double p, int t, double r, int n){
         double amount =  p * Math.pow(1 + (r/n), n*t);
         double compinterest = amount - p;
