@@ -24,11 +24,20 @@ public class BankAccount {
     }
 
     public void savings(BankAccount bank, double startAmount) {
+        Scanner keyboard = new Scanner (System.in);
         if(startAmount >= 10000) {
             System.out.println("Would you like to start a Savings Account that can accumulate interest?");
+            int savingsChoice;
+            int savingsY = 1;
+            int savingsN = 2;
+            savingsChoice = keyboard.nextInt();
+            if(savingsChoice == 1){
+                BankAccount name_savings = new BankAccount(startAmount);
+            }else {
+                    System.out.println("Not a problem. Your starting balance is " + startAmount);
+                }
+            }
         }
-            // how to do input with if function such as yes or no
-    }
 
  //test
     public void deposit(double amount){

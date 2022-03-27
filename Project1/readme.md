@@ -20,7 +20,7 @@ Add the following methods to bank account:
         else if 
         else if
         else 
-    Hint 4: Method should look something like overDraft(BankAccount bank, double value)
+    Hint 4: Method should look something like overDraft(BankAccount bank, double value) DONE DONE DONE
           
 2. Create a method for transfer Money. The method should take in 2 bank account objects and an amount to transfer. You can assume the second account is gregChecking
     Hint 1. This will require you to take in 3 parameters at min
