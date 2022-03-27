@@ -33,8 +33,9 @@ public class BankAccountTester {
         }else if (menuSelection == 3){
             System.out.println("Please enter the amount to withdraw");
             double withdrawAmount = keyboard.nextDouble();
-           
-            name_checking.withdraw(withdrawAmount);
+            // name_checking.withdraw(withdrawAmount);
+            name_checking.overdraft(name_checking, withdrawAmount);
+            // System.out.println(name_checking.getBalance());
             System.out.println("Amount: $"+ withdrawAmount + " was withdrawn");
             System.out.println("Total balance: $" + name_checking.getBalance());
 

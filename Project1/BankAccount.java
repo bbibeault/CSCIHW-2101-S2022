@@ -3,6 +3,7 @@ package Project1;
 import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner14;
+import javax.net.ssl.KeyStoreBuilderParameters;
 import javax.sql.rowset.spi.SyncResolver;
 
 public class BankAccount {
@@ -36,14 +37,19 @@ public class BankAccount {
         balance = balance - amount;
     }
 
-    public void overdraft(BankAccount bank, double amount){
-        if(bank.getBalance() < amount){
-            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed?");
-        }
-            // why not only doing 1?
-        else if(bank.getBalance()  >= amount){
-            bank.withdraw(amount);
-            System.out.println(amount + " has been withdrawn. Thank you!");
+    public void overdraft(BankAccount bank, double withdrawAmount){
+        Scanner keyboard = new Scanner (System.in);
+        if(bank.getBalance() >= withdrawAmount){
+            bank.withdraw(withdrawAmount);
+            // System.out.println(withdrawAmount + " has been withdrawn. Thank you!");
+        }else if(bank.getBalance() < withdrawAmount){
+            System.out.println("You are trying to withdraw more money than you have in your account. Proceeding will result in an overdraft fee of $35.00. Would you like to proceed? Click 1 for Yes or 2 for No.");
+            int Y;
+            int N;
+            Y = keyboard.nextInt();
+                bank.withdraw(withdrawAmount + 35);
+            N = keyboard.nextInt();
+            System.out.println("Your transaction has been cancelled.");
         }
     }
 
