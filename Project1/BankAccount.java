@@ -100,6 +100,12 @@ public class BankAccount {
         System.out.println("Amount after "+ t +" years: "+ amount);
     }
 
+    // Simple Interest = (P × R × T)/100
+    public void simpleIntCalc(int p, double r, int t){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Interest would be" + (p * r * t)/100);
+    }
+
     public static int menu(){
         int selection;
         Scanner input = new Scanner(System.in);
