@@ -70,9 +70,11 @@ public class BankAccount {
             choice = keyboard.nextInt();
             if(choice == 1){
                 bank.withdraw(withdrawAmount + 35);
-        }else {
-            System.out.println("Your transaction has been cancelled");
-        }
+            }else if(choice == 2){
+                System.out.println("Your transaction has been cancelled");
+            }else{
+                System.out.println("Please select a valid option");
+            }
     }
 }
 
