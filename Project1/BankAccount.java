@@ -50,6 +50,7 @@ public class BankAccount {
                 bank.withdraw(withdrawAmount + 35);
             N = keyboard.nextInt();
             System.out.println("Your transaction has been cancelled.");
+            // running both, looking for a if/then statement?
         }
     }
 
