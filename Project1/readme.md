@@ -50,4 +50,4 @@ NOTE: The value of n im compounded must be 4 for quarterly
 
 DONE
 5. Incorporate the methods in the interactive prompt
-    Add Options for transfering and Setting up a savings account Include error checking in logic
+    Add Options for transferring and Setting up a savings account Include error checking in logic

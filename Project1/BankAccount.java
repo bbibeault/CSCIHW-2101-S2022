@@ -53,7 +53,7 @@ public class BankAccount {
                     int t = keyboard.nextInt();
                     double R = .0001;
                     int n = 4;
-                    System.out.println("The amount of interest you would earn is " + P * Math.pow(1 + (R/n), n*t));
+                    System.out.println("Your total account balance after " + t + " years would be " + P * Math.pow(1 + (R/n), n*t));
                 }else{
                     System.out.println("Please select a valid option");
                 }
