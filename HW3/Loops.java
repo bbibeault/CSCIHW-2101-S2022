@@ -14,7 +14,18 @@ public class Loops {
     //eeeeat -> false
 
     public static boolean loopE(String str){
-        return true; // <- this should be changed 
+        int count = 0;
+
+    for (int i = 0; i < str.length(); i++) {
+        String sub = str.substring(i, i+1);
+        if (sub.equals("e"))
+            count ++;
+    }
+    return (count>=1 && count<=3);
+        
+        
+        
+    // return true; // <- this should be changed 
     }
 
     //Given a String str and int n return a larger string that is n copies of the original string 
