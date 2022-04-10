@@ -22,10 +22,6 @@ public class Loops {
             count ++;
     }
     return (count>=1 && count<=3);
-        
-        
-        
-    // return true; // <- this should be changed 
     }
 
     //Given a String str and int n return a larger string that is n copies of the original string 
