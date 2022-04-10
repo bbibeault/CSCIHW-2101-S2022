@@ -4,12 +4,9 @@ import java.util.Scanner;
 public class Loops {
 
     //NOTE: DO NOT change anything in the boiler plate
-    //If I added default code it is meant to be there
-    //and should not be adjusted unless otherwise noted
-    //(return statments are usually changed)
+    //If I added default code it is meant to be there and should not be adjusted unless otherwise noted (return statments are usually changed)
 
-    //Make a method that will return true if a given 
-    //String contains between 1 and 3 'e' chars.
+    //Make a method that will return true if a given  string contains between 1 and 3 'e' chars.
     //Ex.
     //loopE("eat") -> true
     //eeat -> true
@@ -20,8 +17,7 @@ public class Loops {
         return true; // <- this should be changed 
     }
 
-    //Given a String str and int n return a larger string
-    //that is n copies of the original string 
+    //Given a String str and int n return a larger string that is n copies of the original string 
     //Ex.
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
@@ -29,9 +25,7 @@ public class Loops {
         return null; // <- this should be changed 
     } 
 
-    //Create a method Given a string, return the string where all of the "z"
-    //Have been removed. Except do not remove a z at the start
-    //or end
+    //Create a method Given a string, return the string where all of the "z" have been removed. Except do not remove a z at the start or end
     //Ex.
     //stringT("zHelloz") -> "zHelloz"
     //stringT("nozthaznks") -> "nothanks"
