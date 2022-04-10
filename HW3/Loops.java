@@ -15,7 +15,6 @@ public class Loops {
 
     public static boolean loopE(String str){
         int count = 0;
-
     for (int i = 0; i < str.length(); i++) {
         String sub = str.substring(i, i+1);
         if (sub.equals("e"))
