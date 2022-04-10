@@ -71,6 +71,8 @@ public class Loops {
     public static void main(String[] args) {
         // Add code to help test your methods here
 
+        // RUN METHODS HERE
+
     }
     
 }
