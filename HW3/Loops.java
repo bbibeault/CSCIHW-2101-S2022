@@ -25,30 +25,29 @@ public class Loops {
     else
         return false;
     }
+    // does it have to return something???
+
 
     //Given a String str and int n return a larger string that is n copies of the original string 
     //Ex.
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
+
     public static String stringTimes(String str, int n) {
-
-       
-
-
-
         return null;
-         
-    // return null; // <- this should be changed 
     } 
+
 
     //Create a method Given a string, return the string where all of the "z" have been removed. Except do not remove a z at the start or end
     //Ex.
     //stringT("zHelloz") -> "zHelloz"
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
+
     public static String stringZ(String str){
         return null; // <- this should be changed 
     }
+
 
     //Create a method that contains a while loop that allows for
     //The user to input numbers until the number 0 is entered. Each time a number is 
@@ -75,9 +74,11 @@ public class Loops {
     // The total so far is 27.
     // Number: 0
     // TOTAL ENDED --- The total is 27.
+
     public static void sums(){
     }
 
+    
     public static void main(String[] args) {
 
         // Add code to help test your methods here
