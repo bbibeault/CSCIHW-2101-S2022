@@ -1,9 +1,13 @@
 package HW3;
 import java.util.Scanner;
 
+import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardDownRightHandler;
+
 import org.w3c.dom.css.Counter;
 
 public class Loops {
+    Scanner keyboard = new Scanner(System.in);
+
 
     //NOTE: DO NOT change anything in the boiler plate
     //If I added default code it is meant to be there and should not be adjusted unless otherwise noted (return statments are usually changed)
@@ -78,8 +82,9 @@ public class Loops {
     public static void sums(){
     }
 
-    
+
     public static void main(String[] args) {
+        loopE(str)
 
         // Add code to help test your methods here
 
