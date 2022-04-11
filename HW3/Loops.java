@@ -88,6 +88,16 @@ public class Loops {
     // TOTAL ENDED --- The total is 27.
 
     public static void sums(){
+        Scanner input = new Scanner(System.in);
+        int sum = 0;
+        int number = input.nextInt();
+        while (number > 0){
+            sum += number;
+        }
+
+
+        // use while loop for it to execute until 0 is put in for it to return false
+
     }
 
 
@@ -100,7 +110,7 @@ public class Loops {
         System.out.println("Input a word with z's in it to see how they are removed.");
         System.out.println(stringZ(keyboard.next()));
         System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
-        // System.out.println(sums();
+        // System.out.println(sums());
 
 
         // Add code to help test your methods here
