@@ -1,6 +1,8 @@
 package HW3;
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+import javax.sql.rowset.spi.SyncResolver;
 import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardDownRightHandler;
 
 import org.w3c.dom.css.Counter;
@@ -84,8 +86,6 @@ public class Loops {
 
 
     public static void main(String[] args) {
-        loopE(str)
-
         // Add code to help test your methods here
 
         // RUN METHODS HERE
