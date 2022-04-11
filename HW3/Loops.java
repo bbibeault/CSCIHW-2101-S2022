@@ -54,10 +54,9 @@ public class Loops {
 
     public static String stringZ(String str){
         int count = 0;
-    for (int i = 0; i < str.length(); i++);{
+        for (int i = 0; i < str.length(); i++);{
             // if str.replace??
         }
-
         return str;
     }
 
@@ -100,6 +99,8 @@ public class Loops {
         System.out.println(stringTimes(keyboard.next(), keyboard.nextDouble()));
         System.out.println("Input a word with z's in it to see how they are removed.");
         System.out.println(stringZ(keyboard.next()));
+        System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
+        // System.out.println(sums();
 
 
         // Add code to help test your methods here
