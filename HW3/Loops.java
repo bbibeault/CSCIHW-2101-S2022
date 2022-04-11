@@ -8,8 +8,6 @@ import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardDownRightHandler;
 import org.w3c.dom.css.Counter;
 
 public class Loops {
-    Scanner keyboard = new Scanner(System.in);
-
 
     //NOTE: DO NOT change anything in the boiler plate
     //If I added default code it is meant to be there and should not be adjusted unless otherwise noted (return statments are usually changed)
@@ -21,31 +19,16 @@ public class Loops {
     //eeeat -> true
     //eeeeat -> false
 
-    public static boolean loopE(String str){
-        // String characters = "";
-        // String duplicates = "";
-        // String cheat = characters.toString(str.charAt(i));
-        // for(int i = 0; i < str.length(); i++) {
-        //     if(characters.contains(cheat));
-        //     duplicates += cheat;
-        //     characters += cheat;
-
-        // }
-        // return true;
-        return true;
-        
-        
-    //     int count = 0;
-    // for (int i = 0; i < str.length(); i++) {
-    //     if (str.charAt(i) == 'e')count ++;
-    // }
-    // if(count >=1 && count <=3)
-    //     return true;
-    // else
-    //     return false;
+    public static boolean loopE(String str){  
+        int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+        if (str.charAt(i) == 'e')count ++;
     }
-    // does it have to return something???
-
+    if(count >=1 && count <=3)
+        return true;
+    else
+        return false;
+    }
 
     //Given a String str and int n return a larger string that is n copies of the original string 
     //Ex.
@@ -53,11 +36,9 @@ public class Loops {
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
 
     public static String stringTimes(String str, int n) {
-        String one = "";
-        for (int i = 0; i < n; i = i + 1);{
-            one = one + str;
+        for (int i = 0; i < n; i++); {
         }
-        return one;
+        return str;
     } 
 
 
@@ -103,10 +84,11 @@ public class Loops {
 
 
     public static void main(String[] args) {
-        loopE("input word here");
-        stringTimes("code", 5);
-        // stringZ();
-        // sum();
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println(loopE(keyboard.next()));
+        System.out.println(stringTimes(keyboard.next(), keyboard.nextInt()));
+
         // Add code to help test your methods here
     }
 }
