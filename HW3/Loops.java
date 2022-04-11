@@ -35,10 +35,14 @@ public class Loops {
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
 
-    public static String stringTimes(String str, int n) {
+    public static String stringTimes(String str, double n) {
+        String s = "";
         for (int i = 0; i < n; i++); {
+            s = s + str;
         }
-        return str;
+        return s;
+
+        // doesnt return value of double
     } 
 
 
@@ -49,7 +53,12 @@ public class Loops {
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
     public static String stringZ(String str){
-        return null; // <- this should be changed 
+        // String here for Z??
+        for (int i = 0; i < str.charAt(i); i++); {
+            if 
+        }
+
+        return null;
     }
 
 
@@ -88,7 +97,10 @@ public class Loops {
         System.out.println("Input a word for number one.");
         System.out.println(loopE(keyboard.next()));
         System.out.println("Input a word for number two along with how many times it should repeat.");
-        System.out.println(stringTimes(keyboard.next(), keyboard.nextInt()));
+        System.out.println(stringTimes(keyboard.next(), keyboard.nextDouble()));
+        System.out.println("Input a word with z's in it to see how they are removed.");
+        System.out.println(stringZ(keyboard.next()));
+
 
         // Add code to help test your methods here
     }
