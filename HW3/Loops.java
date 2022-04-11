@@ -85,8 +85,9 @@ public class Loops {
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-
+        System.out.println("Input a word for number one.");
         System.out.println(loopE(keyboard.next()));
+        System.out.println("Input a word for number two along with how many times it should repeat.");
         System.out.println(stringTimes(keyboard.next(), keyboard.nextInt()));
 
         // Add code to help test your methods here
