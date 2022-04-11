@@ -86,6 +86,7 @@ public class Loops {
 
 
     public static void main(String[] args) {
+        loopE("input word here");
         // Add code to help test your methods here
 
         // RUN METHODS HERE
