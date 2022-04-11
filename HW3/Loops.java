@@ -22,14 +22,27 @@ public class Loops {
     //eeeeat -> false
 
     public static boolean loopE(String str){
-        int count = 0;
-    for (int i = 0; i < str.length(); i++) {
-        if (str.charAt(i) == 'e')count ++;
-    }
-    if(count >=1 && count <=3)
+        // String characters = "";
+        // String duplicates = "";
+        // String cheat = characters.toString(str.charAt(i));
+        // for(int i = 0; i < str.length(); i++) {
+        //     if(characters.contains(cheat));
+        //     duplicates += cheat;
+        //     characters += cheat;
+
+        // }
+        // return true;
         return true;
-    else
-        return false;
+        
+        
+    //     int count = 0;
+    // for (int i = 0; i < str.length(); i++) {
+    //     if (str.charAt(i) == 'e')count ++;
+    // }
+    // if(count >=1 && count <=3)
+    //     return true;
+    // else
+    //     return false;
     }
     // does it have to return something???
 
@@ -40,7 +53,11 @@ public class Loops {
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
 
     public static String stringTimes(String str, int n) {
-        return null;
+        String one = "";
+        for (int i = 0; i < n; i = i + 1);{
+            one = one + str;
+        }
+        return one;
     } 
 
 
@@ -87,11 +104,10 @@ public class Loops {
 
     public static void main(String[] args) {
         loopE("input word here");
+        stringTimes("code", 5);
+        // stringZ();
+        // sum();
         // Add code to help test your methods here
-
-        // RUN METHODS HERE
-
     }
-    
 }
 // this is a test
