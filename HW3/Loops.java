@@ -53,12 +53,12 @@ public class Loops {
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
     public static String stringZ(String str){
-        // String here for Z??
-        for (int i = 0; i < str.charAt(i); i++); {
-            if 
+        int count = 0;
+    for (int i = 0; i < str.length(); i++);{
+            // if str.replace??
         }
 
-        return null;
+        return str;
     }
 
 
