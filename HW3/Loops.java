@@ -1,12 +1,14 @@
 package HW3;
 import java.util.Scanner;
 
+import org.w3c.dom.css.Counter;
+
 public class Loops {
 
     //NOTE: DO NOT change anything in the boiler plate
     //If I added default code it is meant to be there and should not be adjusted unless otherwise noted (return statments are usually changed)
 
-    //Make a method that will return true if a given  string contains between 1 and 3 'e' chars.
+    //Make a method that will return true if a given string contains between 1 and 3 'e' chars.
     //Ex.
     //loopE("eat") -> true
     //eeat -> true
@@ -16,11 +18,12 @@ public class Loops {
     public static boolean loopE(String str){
         int count = 0;
     for (int i = 0; i < str.length(); i++) {
-        String sub = str.substring(i, i+1);
-        if (sub.equals("e"))
-            count ++;
+        if (str.charAt(i) == 'e')count ++;
     }
-    return (count>=1 && count<=3);
+    if(count >=1 && count <=3)
+        return true;
+    else
+        return false;
     }
 
     //Given a String str and int n return a larger string that is n copies of the original string 
@@ -28,7 +31,14 @@ public class Loops {
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
     public static String stringTimes(String str, int n) {
-        return null; // <- this should be changed 
+
+       
+
+
+
+        return null;
+         
+    // return null; // <- this should be changed 
     } 
 
     //Create a method Given a string, return the string where all of the "z" have been removed. Except do not remove a z at the start or end
@@ -69,6 +79,7 @@ public class Loops {
     }
 
     public static void main(String[] args) {
+
         // Add code to help test your methods here
 
         // RUN METHODS HERE
