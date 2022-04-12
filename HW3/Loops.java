@@ -93,8 +93,8 @@ public class Loops {
         int number = input.nextInt();
         while (number > 0){
             sum += number;
-            if (number == 0)
-                // end loop?
+            if (number == 0);
+                System.out.println("hmm");
         }
 
 
