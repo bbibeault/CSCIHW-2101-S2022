@@ -52,12 +52,17 @@ public class Loops {
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
-    public static String stringZ(String str){
-        int count = 0;
-        for (int i = 0; i < str.length(); i++);{
-            // if str.replace??
+    public static String stringZ(String str)
+    {
+        int one = str.length();
+        if (one < 3){
+            return str;
+            // why less than 3?
         }
-        return str;
+        String subStr = str.substring(1, one - 1);
+        subStr = subStr.replace("x", "");
+
+        return str.charAt(0) + subStr + str.charAt(one - 1);
     }
 
 
