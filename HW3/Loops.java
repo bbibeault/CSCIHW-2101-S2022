@@ -42,7 +42,7 @@ public class Loops {
         }
         return s;
 
-        // why the empty string and meaning?
+        // why and the meaning of the empty string?
     } 
 
 
