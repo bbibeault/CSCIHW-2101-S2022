@@ -87,20 +87,31 @@ public class Loops {
     // Number: 0
     // TOTAL ENDED --- The total is 27.
 
-    public static void sums(){
+    public static void sums(int numbers){
         Scanner input = new Scanner(System.in);
-        int sum = 0;
-        int number = input.nextInt();
-        while (number > 0){
-            sum += number;
-            if (number == 0);
-                System.out.println("hmm");
+            while (numbers > 0){
+                int total = numbers;
+                int count = numbers + total;
+                System.out.println("enter a number");
+                    if (numbers > 0);
+                    System.out.println("Enter another number" + numbers);
+                    System.out.println("Total = " + count);
+                    if (numbers <0){
+                    System.out.println(count);
+                }
+
+            }
+
+        // int sum = 0;
+        // int number = input.nextInt();
+        // while (number > 0){
+        //     sum += number;
+        //     if (number == 0);
+        //         System.out.println("hmm");
         }
 
 
         // use while loop for it to execute until 0 is put in for it to return false
-
-    }
 
 
     public static void main(String[] args) {
@@ -112,7 +123,7 @@ public class Loops {
         System.out.println("Input a word with z's in it to see how they are removed.");
         System.out.println(stringZ(keyboard.next()));
         System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
-        // System.out.println(sums());
+        // System.out.println(sums(keyboard.nextInt()));
 
 
         // Add code to help test your methods here
