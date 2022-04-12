@@ -41,6 +41,8 @@ public class Loops {
             s += str;
         }
         return s;
+
+        // why the empty string and meaning?
     } 
 
 
