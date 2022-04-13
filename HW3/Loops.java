@@ -54,13 +54,11 @@ public class Loops {
 
     public static String stringZ(String str) {
         for (int i = 0; i < str.length(); i++){
-            if (str.substring(i, i++).equalsIgnoreCase("x")) {
-                str.replaceAll(str, "");
-            }
-
+            if (str.charAt(i) == 'x'); // delete character or get rid of it???
         }
-        return str;
-    }
+        if (str.charAt(0) == 'x'); // to leave first letter alone?
+            return str;
+        }
     // help understanding the second aspect of for loop in parentheses
 
 
