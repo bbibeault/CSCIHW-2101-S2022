@@ -99,17 +99,14 @@ public class Loops {
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Input a word for number one.");
-        System.out.println(loopE(keyboard.next()));
-        System.out.println("Input a word for number two along with how many times it should repeat.");
-        System.out.println(stringTimes(keyboard.next(), keyboard.nextInt()));
-        System.out.println("Input a word with z's in it to see how they are removed.");
-        System.out.println(stringZ(keyboard.next()));
-        System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
-        // System.out.println(sums(keyboard.nextInt()));
-
-
-        // Add code to help test your methods here
+            System.out.println("Input a word for number one.");
+            System.out.println(loopE(keyboard.next()));
+            System.out.println("Input a word for number two along with how many times it should repeat.");
+            System.out.println(stringTimes(keyboard.next(), keyboard.nextInt()));
+            System.out.println("Input a word with z's in it to see how they are removed.");
+            System.out.println(stringZ(keyboard.next()));
+            System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
+            // System.out.println(sums(keyboard.nextInt()));
     }
 }
 // this is a test
