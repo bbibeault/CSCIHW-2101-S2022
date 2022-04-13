@@ -52,18 +52,15 @@ public class Loops {
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
-    public static String stringZ(String str)
-    {
-        int one = str.length();
-        if (one < 3){
-            return str;
-            // why less than 3?
-        }
-        String subStr = str.substring(1, one - 1);
-        subStr = subStr.replace("x", "");
+    public static String stringZ(String str) {
+        for (int i = 0; i < str.length(); i++){
+            if (str.substring(i, i++).equalsIgnoreCase("x")) {
+                // something to delete x
+            }
 
-        return str.charAt(0) + subStr + str.charAt(one - 1);
+        }
     }
+        return null;
 
 
     //Create a method that contains a while loop that allows for
