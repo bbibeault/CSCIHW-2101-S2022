@@ -7,6 +7,8 @@ import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardDownRightHandler;
 
 import org.w3c.dom.css.Counter;
 
+import HW1.Replace;
+
 public class Loops {
 
     //NOTE: DO NOT change anything in the boiler plate
@@ -53,11 +55,17 @@ public class Loops {
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
     public static String stringZ(String str) {
+        String words = "";
         for (int i = 0; i < str.length(); i++){
             if (str.charAt(i) == 'x'); // delete character or get rid of it???
+                str.replace("x", "");
         }
         if (str.charAt(0) == 'x'); // to leave first letter alone?
             return str;
+
+
+// use str.substring keep z in beginnig and end?
+
         }
     // help understanding the second aspect of for loop in parentheses
 
