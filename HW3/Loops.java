@@ -76,6 +76,7 @@ public class Loops {
         //     return str;
     }
     // help understanding the second aspect of for loop in parentheses
+    // know while loop is in there because i do not know how long it will go
 
 
     //Create a method that contains a while loop that allows for
