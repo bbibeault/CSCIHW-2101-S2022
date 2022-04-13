@@ -61,6 +61,7 @@ public class Loops {
         }
         return str;
     }
+    // help understanding the second aspect of for loop in parentheses
 
 
     //Create a method that contains a while loop that allows for
@@ -90,26 +91,6 @@ public class Loops {
     // TOTAL ENDED --- The total is 27.
 
     public static void sums(int numbers){
-        Scanner input = new Scanner(System.in);
-            while (numbers > 0){
-                int total = numbers;
-                int count = numbers + total;
-                System.out.println("enter a number");
-                    if (numbers > 0);
-                    System.out.println("Enter another number" + numbers);
-                    System.out.println("Total = " + count);
-                    if (numbers <0){
-                    System.out.println(count);
-                }
-
-            }
-
-        // int sum = 0;
-        // int number = input.nextInt();
-        // while (number > 0){
-        //     sum += number;
-        //     if (number == 0);
-        //         System.out.println("hmm");
         }
 
 
