@@ -55,12 +55,12 @@ public class Loops {
     public static String stringZ(String str) {
         for (int i = 0; i < str.length(); i++){
             if (str.substring(i, i++).equalsIgnoreCase("x")) {
-                // something to delete x
+                str.replaceAll(str, "");
             }
 
         }
+        return str;
     }
-        return null;
 
 
     //Create a method that contains a while loop that allows for
