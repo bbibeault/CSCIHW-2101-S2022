@@ -55,18 +55,26 @@ public class Loops {
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
 
     public static String stringZ(String str) {
-        String words = "";
-        for (int i = 0; i < str.length(); i++){
-            if (str.charAt(i) == 'x'); // delete character or get rid of it???
-                str.replace("x", "");
+        int i = 0;
+        while (i < str.length()) {
+            char ab = str.charAt(i);
+            if (ab == 'x' || ab == 'X') {
+                String before = str.substring(0, i);
+                String after = str.substring(i + 1);
+                str = before + after;
+            }
+            else {
+                i++;
+            }
         }
-        if (str.charAt(0) == 'x'); // to leave first letter alone?
-            return str;
-
-
-// use str.substring keep z in beginnig and end?
-
-        }
+        return str;
+        
+        // int count = 0;
+        // for (int i = 0; i < str.length(); i++) {
+        //     str.replace('x', ' ');
+        // }
+        //     return str;
+    }
     // help understanding the second aspect of for loop in parentheses
 
 
