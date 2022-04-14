@@ -41,10 +41,8 @@ public class Loops {
             s += str;
         }
         return s;
-
-        // why and the meaning of the empty string?
     } 
-
+        // why and the meaning of the empty string?
 
     //Create a method Given a string, return the string where all of the "z" have been removed. Except do not remove a z at the start or end
     //Ex.
@@ -55,10 +53,10 @@ public class Loops {
         int i = 0;
         while (i < str.length()) {
             char ab = str.charAt(i);
-            if (ab == 'x' || ab == 'X') {
-                // String before = str.substring(0, i);
-                // String after = str.substring(i + 1);
-                // str = before + after;
+            if (ab == 'z' || ab == 'Z') {
+                String before = str.substring(0, i);
+                String after = str.substring(i + 1);
+                str = before + after;
             }
             else {
                 i++;
@@ -66,11 +64,7 @@ public class Loops {
         }
         return str;
     }
-
-    // help understanding the second aspect of for loop in parentheses
-    // know while loop is in there because i do not know how long it will go
-    // getting rid of the z's
-
+    // little more help understanding the code
 
     //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
     //NOTE: I require the use of scanner here to get each integer from the user
@@ -95,7 +89,6 @@ public class Loops {
     // The total so far is 27.
     // Number: 0
     // TOTAL ENDED --- The total is 27.
-
     public static void sums(int amount){
         Scanner keyboard = new Scanner(System.in);
             int sum = 0;
