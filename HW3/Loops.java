@@ -59,22 +59,17 @@ public class Loops {
         while (i < str.length()) {
             char ab = str.charAt(i);
             if (ab == 'x' || ab == 'X') {
-                String before = str.substring(0, i);
-                String after = str.substring(i + 1);
-                str = before + after;
+                // String before = str.substring(0, i);
+                // String after = str.substring(i + 1);
+                // str = before + after;
             }
             else {
                 i++;
             }
         }
         return str;
-        
-        // int count = 0;
-        // for (int i = 0; i < str.length(); i++) {
-        //     str.replace('x', ' ');
-        // }
-        //     return str;
     }
+    
     // help understanding the second aspect of for loop in parentheses
     // know while loop is in there because i do not know how long it will go
 
