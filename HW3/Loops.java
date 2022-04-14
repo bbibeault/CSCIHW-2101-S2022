@@ -65,6 +65,7 @@ public class Loops {
         return str;
     }
     // little more help understanding the code
+    // keeping the Z's in beginning and end
 
     //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
     //NOTE: I require the use of scanner here to get each integer from the user
