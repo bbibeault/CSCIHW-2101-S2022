@@ -20,6 +20,7 @@ public class Loops {
     //eeat -> true
     //eeeat -> true
     //eeeeat -> false
+    // GOOD
     public static boolean loopE(String str){  
         int count = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -35,6 +36,7 @@ public class Loops {
     //Ex.
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
+    // QUESTION UNDERNEATH
     public static String stringTimes(String str, int n) {
         String s = "";
         for (int i = 0; i < n; i++){
@@ -49,6 +51,7 @@ public class Loops {
     //stringT("zHelloz") -> "zHelloz"
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
+    // QUESTIONS UNDERNEATH
     public static String stringZ(String str) {
         int i = 0;
         while (i < str.length()) {
@@ -90,6 +93,7 @@ public class Loops {
     // The total so far is 27.
     // Number: 0
     // TOTAL ENDED --- The total is 27.
+    // QUESTIONS UNDERNEATH
     public static void sums(int amount){
         Scanner keyboard = new Scanner(System.in);
             int sum = 0;
