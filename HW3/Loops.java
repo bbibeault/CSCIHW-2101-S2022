@@ -119,6 +119,7 @@ public class Loops {
         // print out sum
         }
         // how to make it return in main
+        // extension that changes colors in vsCode
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
