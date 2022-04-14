@@ -2,6 +2,7 @@ package HW3;
 import java.util.Scanner;
 
 import javax.sound.sampled.SourceDataLine;
+import javax.sql.rowset.spi.SyncFactory;
 import javax.sql.rowset.spi.SyncResolver;
 import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardDownRightHandler;
 
@@ -13,14 +14,12 @@ public class Loops {
 
     //NOTE: DO NOT change anything in the boiler plate
     //If I added default code it is meant to be there and should not be adjusted unless otherwise noted (return statments are usually changed)
-
     //Make a method that will return true if a given string contains between 1 and 3 'e' chars.
     //Ex.
     //loopE("eat") -> true
     //eeat -> true
     //eeeat -> true
     //eeeeat -> false
-
     public static boolean loopE(String str){  
         int count = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -36,7 +35,6 @@ public class Loops {
     //Ex.
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
-
     public static String stringTimes(String str, int n) {
         String s = "";
         for (int i = 0; i < n; i++){
@@ -53,7 +51,6 @@ public class Loops {
     //stringT("zHelloz") -> "zHelloz"
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
-
     public static String stringZ(String str) {
         int i = 0;
         while (i < str.length()) {
@@ -69,14 +66,13 @@ public class Loops {
         }
         return str;
     }
-    
+
     // help understanding the second aspect of for loop in parentheses
     // know while loop is in there because i do not know how long it will go
+    // getting rid of the z's
 
 
-    //Create a method that contains a while loop that allows for
-    //The user to input numbers until the number 0 is entered. Each time a number is 
-    //entered the total will be summed and then prompted for a second number. 
+    //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
     //NOTE: I require the use of scanner here to get each integer from the user
     //Assume the numbers entered are integers
     //Also note that the method is void meaning you will not need to return anything
@@ -100,12 +96,31 @@ public class Loops {
     // Number: 0
     // TOTAL ENDED --- The total is 27.
 
-    public static void sums(int numbers){
+    public static void sums(int amount){
+        Scanner keyboard = new Scanner(System.in);
+            int sum = 0;
+            System.out.println("I will add up the numbers you give me. If you would like the sum, enter 0.");
+            int inputNumber = keyboard.nextInt();
+
+            while (inputNumber > 0) {
+                sum += inputNumber;
+            System.out.println("Enter the next number. If you would like the sum, input 0.");
+            inputNumber = keyboard.nextInt();
+            }
+
+            if (inputNumber == 0) {
+                System.out.println("You did not enter any data!");
+            }
+            else {
+                System.out.println("The total of the integers is " + sum );
+            }
+        // read an integer
+        // whgile the int is not 0
+            // add it to the value
+            // read an integer
+        // print out sum
         }
-
-
-        // use while loop for it to execute until 0 is put in for it to return false
-
+        // how to make it return in main
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
