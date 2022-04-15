@@ -20,7 +20,7 @@ public class Loops {
     //eeat -> true
     //eeeat -> true
     //eeeeat -> false
-    // GOOD
+
     public static boolean loopE(String str){  
         int count = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -36,7 +36,7 @@ public class Loops {
     //Ex.
     //stringTimes("Code",2) ->"CodeCode"
     //stringTimes("Code",4) ->"CodeCodeCodeCode"
-    // QUESTION UNDERNEATH
+
     public static String stringTimes(String str, int n) {
         String s = "";
         for (int i = 0; i < n; i++){
@@ -50,13 +50,12 @@ public class Loops {
     //stringT("zHelloz") -> "zHelloz"
     //stringT("nozthaznks") -> "nothanks"
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
-    // QUESTIONS UNDERNEATH
+
     public static String stringZ(String str) {
         String s = "";
         if (str.charAt(0) == 'z' || str.charAt(0) == 'Z') {
             s += str.charAt(0);
         }
-        // while (i < str.length() - 1) {
         for (int i = 1; i < str.length() - 1; i++) {
             if (str.charAt(i) != 'z' && str.charAt(i) != 'Z')
             {
@@ -68,7 +67,6 @@ public class Loops {
         }
         return s;
     }
-    
 
     //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
     //NOTE: I require the use of scanner here to get each integer from the user
@@ -93,26 +91,18 @@ public class Loops {
     // The total so far is 27.
     // Number: 0
     // TOTAL ENDED --- The total is 27.
-    // QUESTIONS UNDERNEATH
+
     public static void sums(){
         Scanner keyboard = new Scanner(System.in);
             int sum = 0;
             int inputNumber = keyboard.nextInt();
-
             while (inputNumber > 0) {
                 sum += inputNumber;
             System.out.println("Enter the next number. If you would like the sum, input 0. Current total is: " + sum);
             inputNumber = keyboard.nextInt();
             }
                 System.out.println("The total of the integers is " + sum );
-        // read an integer
-        // while the int is not 0
-            // add it to the value
-            // read an integer
-        // print out sum
         }
-        // how to make it return in main
-        // extension that changes colors in vsCode
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
