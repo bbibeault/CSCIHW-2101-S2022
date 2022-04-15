@@ -44,7 +44,6 @@ public class Loops {
         }
         return s;
     } 
-        // why and the meaning of the empty string?
 
     //Create a method Given a string, return the string where all of the "z" have been removed. Except do not remove a z at the start or end
     //Ex.
@@ -53,23 +52,23 @@ public class Loops {
     //stringT("xksiazdjaasldzsajzasdz") -> "xksiadjaasldsajasdz"
     // QUESTIONS UNDERNEATH
     public static String stringZ(String str) {
-        int i = 0;
-        while (i < str.length()) {
-            char ab = str.charAt(i);
-            if (ab == 'z' || ab == 'Z') {
-                String before = str.substring(0, i);
-                String after = str.substring(i + 1);
-                str = before + after;
-            }
-            else {
-                i++;
+        String s = "";
+        if (str.charAt(0) == 'z' || str.charAt(0) == 'Z') {
+            s += str.charAt(0);
+        }
+        // while (i < str.length() - 1) {
+        for (int i = 1; i < str.length() - 1; i++) {
+            if (str.charAt(i) != 'z' && str.charAt(i) != 'Z')
+            {
+                s += str.charAt(i);
             }
         }
-        return str;
+        if (str.charAt(str.length() - 1) == 'z' || str.charAt(str.length() - 1) == 'Z') {
+            s += str.charAt(str.length() - 1);
+        }
+        return s;
     }
-    // little more help understanding the code
-    // understand substring method, but how does it play into effect here?
-    // keeping the Z's in beginning and end
+    
 
     //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
     //NOTE: I require the use of scanner here to get each integer from the user
@@ -95,25 +94,19 @@ public class Loops {
     // Number: 0
     // TOTAL ENDED --- The total is 27.
     // QUESTIONS UNDERNEATH
-    public static void sums(int amount){
+    public static void sums(){
         Scanner keyboard = new Scanner(System.in);
             int sum = 0;
             int inputNumber = keyboard.nextInt();
 
             while (inputNumber > 0) {
                 sum += inputNumber;
-            System.out.println("Enter the next number. If you would like the sum, input 0.");
+            System.out.println("Enter the next number. If you would like the sum, input 0. Current total is: " + sum);
             inputNumber = keyboard.nextInt();
             }
-
-            if (inputNumber == 0) {
-                System.out.println("You did not enter any data!");
-            }
-            else {
                 System.out.println("The total of the integers is " + sum );
-            }
         // read an integer
-        // whgile the int is not 0
+        // while the int is not 0
             // add it to the value
             // read an integer
         // print out sum
@@ -130,7 +123,7 @@ public class Loops {
             System.out.println("Input a word with z's in it to see how they are removed.");
             System.out.println(stringZ(keyboard.next()));
             System.out.println("I will add up the numbers you give me. Please enter as many as you would like. To get the sum, enter 0.");
-            // System.out.println(sums(keyboard.nextInt()));
+            sums();
     }
 }
 // this is a test
