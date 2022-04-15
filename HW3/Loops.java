@@ -98,7 +98,6 @@ public class Loops {
     public static void sums(int amount){
         Scanner keyboard = new Scanner(System.in);
             int sum = 0;
-            System.out.println("I will add up the numbers you give me. If you would like the sum, enter 0.");
             int inputNumber = keyboard.nextInt();
 
             while (inputNumber > 0) {
