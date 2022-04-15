@@ -68,6 +68,7 @@ public class Loops {
         return str;
     }
     // little more help understanding the code
+    // understand substring method, but how does it play into effect here?
     // keeping the Z's in beginning and end
 
     //Create a method that contains a while loop that allows for he user to input numbers until the number 0 is entered. Each time a number is  entered the total will be summed and then prompted for a second number. 
