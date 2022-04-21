@@ -46,9 +46,12 @@ public class Arrays {
         System.out.println("Total: " + total);
         System.out.println("Array:");
         for (int i = 0; i < count; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
+            if (i < count - 1) {
+                System.out.print(",");
             }
         }
+    }
 
     // Create a method that will brute force a password EX.
     // bruteForce("ZZZZ")
