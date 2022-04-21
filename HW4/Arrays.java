@@ -117,6 +117,8 @@ public class Arrays {
         System.out.println();
         System.out.println("Enter a password with only letters and symbols.");
         bruteForce(keyboard.next());
+        System.out.println("Enter numbers to be sorted from smallest to greatest.");
+        System.out.println(sorter(nums));
     }
 
     
