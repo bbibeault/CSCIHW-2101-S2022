@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.sql.rowset.spi.SyncResolver;
+import javax.swing.plaf.synth.SynthSpinnerUI;
 
 import HW3.Loops;
 
@@ -72,7 +73,16 @@ public class Arrays {
         char[] alphabet = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')','<','>','/','?'};
-
+    char[] arr = password.toCharArray();
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < alphabet.length; j++) {
+                if (arr[i] == alphabet[j]) {
+                    answer += alphabet[j];
+                    break;
+                }
+            }
+            System.out.println(answer);
+        }
         return answer; 
     }
 
@@ -89,14 +99,12 @@ public class Arrays {
         return sortedArray;
     }
 
-
-
-
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         Arraysums();
-        // System.out.println(bruteForce(sc.next()));
-
+        System.out.println();
+        System.out.println("Enter a password with only letters and symbols.");
+        bruteForce(keyboard.next());
     }
 
     
