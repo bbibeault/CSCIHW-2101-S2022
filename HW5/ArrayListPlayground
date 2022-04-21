@@ -10,21 +10,29 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
-    int[] numArray = new int [15];
+    int[] oneArray = new int [15];
     // b) Output the value of the tenth element of the array nums.
-    System.out.println(alpha[9]);
+    System.out.println(oneArray[9];
     // c) Set the value of the 5th element of the array nums to 99.
-    alpha[4] = 99;
+    oneArray[4] = 99;
     // d) set the value of the 13th element to 15
-    alpha[12] = 15;
+    oneArray[12] = 15;
     // d) set the value of the 2nd element to 6
-    alpha[1] = 6;
+    oneArray[1] = 6;
     // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
-    alpha[8] = alpha[12] + alpha[1];
+    oneArray[8] = oneArray[12] + oneArray[1];
 
          
     // Question 2
     // a) create an arrayList of Strings that contain each day of the week.(starting on monday)
+    ArrayList<String>days = new ArrayList<String>();
+    days.add("Monday");
+    days.add("Tuesday");
+    days.add("Wednesday");
+    days.add("Thursday");
+    days.add("Friday");
+    days.add("Saturday");
+    days.add("Sunday");
     // b) output each of the days of the week
     // c) output the days of the week that we have class 
     // d) change the arrayList to start on Sunday
