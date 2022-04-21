@@ -45,13 +45,14 @@ public class Arrays {
             number = keyboard.nextInt();
         }
         System.out.println("Total: " + total);
-        System.out.println("Array:");
+        System.out.print("Array: {");
         for (int i = 0; i < count; i++) {
             System.out.print(arr[i]);
             if (i < count - 1) {
                 System.out.print(",");
             }
         }
+        System.out.print("}");
     }
 
     // Create a method that will brute force a password EX.
@@ -95,7 +96,18 @@ public class Arrays {
     // Hint 2: 2 nested For loops should be all thats needed for the swapping logic
     public static int[] sorter(int[] nums){
         int [] sortedArray = new int[nums.length];
-
+        for (int i = 0; i < nums.length; i++) {
+            sortedArray[i] = nums[i];
+        }
+        for (int i = 0; i < sortedArray.length; i++) {
+            for (int j = 1; j < sortedArray.length; j++) {
+                if (sortedArray[j-1] > sortedArray[j]) {
+                    int temp = sortedArray[j - 1];
+                    sortedArray[j - 1] = sortedArray [j];
+                    sortedArray[j] = temp;
+                }
+            }
+        }
         return sortedArray;
     }
 
@@ -105,6 +117,7 @@ public class Arrays {
         System.out.println();
         System.out.println("Enter a password with only letters and symbols.");
         bruteForce(keyboard.next());
+
     }
 
     
