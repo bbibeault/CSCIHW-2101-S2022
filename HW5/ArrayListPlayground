@@ -15,6 +15,9 @@ public class ArrayListPlayground {
     // d) set the value of the 13th element to 15
     // d) set the value of the 2nd element to 6
     // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
+
+    int[] numArray = new int [15];
+    
     
 
 
