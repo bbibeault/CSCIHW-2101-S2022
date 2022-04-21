@@ -1,9 +1,15 @@
 package HW4;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.sql.rowset.spi.SyncResolver;
+
+import HW3.Loops;
+
 public class Arrays {
 
-    // CONVERT THE SUMS METHOD FROM HW3 TO ADD EACH VALUE TO AN ARRAY AND THEN OUTPUT THE 
-    // ARRAY AND THE TOTAL.
+    // CONVERT THE SUMS METHOD FROM HW3 TO ADD EACH VALUE TO AN ARRAY AND THEN OUTPUT THE ARRAY AND THE TOTAL.
     // SEE HW3 FOR SUMS METHOD
     // If you want to use an ArrayList for the inputs to be dynamic that is okay
     // Otherwise if you are using a regular array, assume the size is 10 total. 
@@ -22,8 +28,30 @@ public class Arrays {
     // Number: 0
     // Total: 22
     // Array: {12,2,3,4,1,0}
-    public static void Arraysums(){
-
+    public static void Arraysums() {
+        Scanner keyboard = new Scanner(System.in);
+        int total = 0;
+        int count = 0;
+        int number;
+        int[] arr = new int[10];
+        System.out.println("Please enter a number: To see your total, enter 0.");
+        number = keyboard.nextInt();
+        while (number != 0 && count < 10) {
+            arr[count++] = number;
+            total += number;
+            System.out.println("The total is " + total + ".");
+            System.out.println("Please enter a number: To see your total, enter 0.");
+            number = keyboard.nextInt();
+        }
+        System.out.println("Total: " + total);
+        System.out.println("Array :{");
+        for (int i = 0; i < count; i++) {
+            System.out.println(arr[i]);
+            if (i < count - 1) {
+                System.out.println(",");
+            }
+        }
+        System.out.println("{");
     }
 
     // Create a method that will brute force a password EX.
@@ -40,13 +68,12 @@ public class Arrays {
     // Hint 2: using the method .toCharArray is a way to convert the password parameter to
     // a char array as well
     // From there creating for and while loops to compare the values is trivial
-
     public static String bruteForce(String password){
         String answer = "";
         char[] alphabet = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')','<','>','/','?'};
-    
+
         return answer; 
     }
 
@@ -67,6 +94,9 @@ public class Arrays {
 
 
     public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        Arraysums();
+        // System.out.println(bruteForce(sc.next()));
 
     }
 
