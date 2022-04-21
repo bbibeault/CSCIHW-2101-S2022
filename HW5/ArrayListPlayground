@@ -42,8 +42,6 @@ public class ArrayListPlayground {
     weekArray.get(5);
     weekArray.get(6);
     // c) output the days of the week that we have class
-    for (int i = 0; i < weekArray(); i++) {
-    }
     // d) change the arrayList to start on Sunday
 
 
