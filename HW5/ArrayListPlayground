@@ -25,16 +25,25 @@ public class ArrayListPlayground {
          
     // Question 2
     // a) create an arrayList of Strings that contain each day of the week.(starting on monday)
-    ArrayList<String>days = new ArrayList<String>();
-    days.add("Monday");
-    days.add("Tuesday");
-    days.add("Wednesday");
-    days.add("Thursday");
-    days.add("Friday");
-    days.add("Saturday");
-    days.add("Sunday");
+    ArrayList <String> weekArray = new ArrayList <String>();
+    weekArray.add("Monday");
+    weekArray.add("Tuesday");
+    weekArray.add("Wednesday");
+    weekArray.add("Thursday");
+    weekArray.add("Friday");
+    weekArray.add("Saturday");
+    weekArray.add("Sunday");
     // b) output each of the days of the week
-    // c) output the days of the week that we have class 
+    weekArray.get(0);
+    weekArray.get(1);
+    weekArray.get(2);
+    weekArray.get(3);
+    weekArray.get(4);
+    weekArray.get(5);
+    weekArray.get(6);
+    // c) output the days of the week that we have class
+    for (int i = 0; i < weekArray(); i++) {
+    }
     // d) change the arrayList to start on Sunday
 
 
