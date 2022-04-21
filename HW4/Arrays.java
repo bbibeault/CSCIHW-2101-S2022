@@ -44,15 +44,11 @@ public class Arrays {
             number = keyboard.nextInt();
         }
         System.out.println("Total: " + total);
-        System.out.println("Array :{");
+        System.out.println("Array:");
         for (int i = 0; i < count; i++) {
             System.out.println(arr[i]);
-            if (i < count - 1) {
-                System.out.println(",");
             }
         }
-        System.out.println("{");
-    }
 
     // Create a method that will brute force a password EX.
     // bruteForce("ZZZZ")
