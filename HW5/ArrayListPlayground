@@ -10,7 +10,7 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
-    int[] oneArray = new int [15];
+    ArrayList<integer> oneArray = new ArrayList<Integer>();
     // b) Output the value of the tenth element of the array nums.
     System.out.println(oneArray[9];
     // c) Set the value of the 5th element of the array nums to 99.
@@ -42,6 +42,9 @@ public class ArrayListPlayground {
     weekArray.get(5);
     weekArray.get(6);
     // c) output the days of the week that we have class
+    for (String string : weekArray) {
+        system.out.println(string);
+    }
     // d) change the arrayList to start on Sunday
 
 
