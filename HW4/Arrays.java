@@ -117,7 +117,6 @@ public class Arrays {
         System.out.println();
         System.out.println("Enter a password with only letters and symbols.");
         bruteForce(keyboard.next());
-
     }
 
     
