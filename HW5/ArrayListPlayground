@@ -10,16 +10,17 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
-    // b) Output the value of the tenth element of the array nums.
-    // c) Set the value of the 5th element of the array nums to 99.
-    // d) set the value of the 13th element to 15
-    // d) set the value of the 2nd element to 6
-    // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
-
     int[] numArray = new int [15];
-    
-    
-
+    // b) Output the value of the tenth element of the array nums.
+    System.out.println(alpha[9]);
+    // c) Set the value of the 5th element of the array nums to 99.
+    alpha[4] = 99;
+    // d) set the value of the 13th element to 15
+    alpha[12] = 15;
+    // d) set the value of the 2nd element to 6
+    alpha[1] = 6;
+    // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
+    alpha[8] = alpha[12] + alpha[1];
 
          
     // Question 2
