@@ -35,13 +35,13 @@ public class Arrays {
         int count = 0;
         int number;
         int[] arr = new int[10];
-        System.out.println("Please enter a number: To see your total, enter 0.");
+        System.out.println("Please enter a number (up to 10 max): To see your total, enter 0.");
         number = keyboard.nextInt();
         while (number != 0 && count < 10) {
             arr[count++] = number;
             total += number;
             System.out.println("The total is " + total + ".");
-            System.out.println("Please enter a number: To see your total, enter 0.");
+            System.out.println("Please enter a number (up to 10 max): To see your total, enter 0.");
             number = keyboard.nextInt();
         }
         System.out.println("Total: " + total);
@@ -118,8 +118,7 @@ public class Arrays {
         System.out.println("Enter a password with only letters and symbols.");
         bruteForce(keyboard.next());
         System.out.println("Enter numbers to be sorted from smallest to greatest.");
-        System.out.println(sorter(nums));
-    }
-
-    
+        // System.out.println(sorter(nums))
+        // idk how to run this method
+    }    
 }
