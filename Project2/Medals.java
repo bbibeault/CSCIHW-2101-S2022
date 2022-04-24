@@ -92,7 +92,7 @@ public class Medals {
         // Gold    Silver    Bronze
         // 4       4         5
         
-        // ArrayList <Integer> medalCounts = new ArrayList<Integer>(); OR int[] medalCounts;
+        ArrayList <Integer> medalCounts = new ArrayList<Integer>(); // OR int[] medalCounts;
         int sumRow;
         int sumCol;
         int rows = counts.length;
@@ -100,7 +100,7 @@ public class Medals {
         for (int i = 0; i < counts[0].length; i++) {
             sumCol = 0;
             for (int j = 0; j < rows; j++) {
-                // sumCol = sumCol + medalCounts
+                sumCol = sumCol + medalCounts[i][j];
             }
             System.out.println();
 
