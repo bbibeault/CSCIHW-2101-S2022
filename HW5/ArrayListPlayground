@@ -33,20 +33,24 @@ public class ArrayListPlayground {
     weekArray.add("Friday");
     weekArray.add("Saturday");
     weekArray.add("Sunday");
+    Iterator<String>it = days.iterator;
+
     // b) output each of the days of the week
-    weekArray.get(0);
-    weekArray.get(1);
-    weekArray.get(2);
-    weekArray.get(3);
-    weekArray.get(4);
-    weekArray.get(5);
-    weekArray.get(6);
-    // c) output the days of the week that we have class
-    for (String string : weekArray) {
-        system.out.println(string);
+    while(it.hasNext()) {
+        String day = it.next();
+        system.outprintln(day);
     }
+
+    // c) output the days of the week that we have class
+    while(it.hasNext()) {
+        String day = it.next();
+        if(day.equals("Tuesday") || ("Thursday")) {
+            system.out.println(day);
+        }
+    }
+    
     // d) change the arrayList to start on Sunday
-    // test
+
 
 
     // Question 3 
