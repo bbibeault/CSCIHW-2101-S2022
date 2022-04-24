@@ -119,6 +119,6 @@ public class Arrays {
         bruteForce(keyboard.next());
         System.out.println("Enter numbers to be sorted from smallest to greatest.");
         // System.out.println(sorter(nums))
-        // idk how to run this method
+            // idk how to run this method
     }    
 }
