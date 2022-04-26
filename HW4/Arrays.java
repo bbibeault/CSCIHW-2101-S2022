@@ -31,28 +31,6 @@ public class Arrays {
     // Array: {12,2,3,4,1,0}
     public static void Arraysums() {
         Scanner keyboard = new Scanner(System.in);
-        int total = 0;
-        int count = 0;
-        int number;
-        int[] arr = new int[10];
-        System.out.println("Please enter a number (up to 10 max): To see your total, enter 0.");
-        number = keyboard.nextInt();
-        while (number != 0 && count < 10) {
-            arr[count++] = number;
-            total += number;
-            System.out.println("The total is " + total + ".");
-            System.out.println("Please enter a number (up to 10 max): To see your total, enter 0.");
-            number = keyboard.nextInt();
-        }
-        System.out.println("Total: " + total);
-        System.out.print("Array: {");
-        for (int i = 0; i < count; i++) {
-            System.out.print(arr[i]);
-            if (i < count - 1) {
-                System.out.print(",");
-            }
-        }
-        System.out.print("}");
     }
 
     // Create a method that will brute force a password EX.
@@ -74,17 +52,8 @@ public class Arrays {
         char[] alphabet = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')','<','>','/','?'};
-    char[] arr = password.toCharArray();
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < alphabet.length; j++) {
-                if (arr[i] == alphabet[j]) {
-                    answer += alphabet[j];
-                    break;
-                }
-            }
-            System.out.println(answer);
-        }
-        return answer; 
+
+        return answer;
     }
 
     // Create a method that will sort an Array of integers from smallest to greatest.
@@ -96,18 +65,7 @@ public class Arrays {
     // Hint 2: 2 nested For loops should be all thats needed for the swapping logic
     public static int[] sorter(int[] nums){
         int [] sortedArray = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            sortedArray[i] = nums[i];
-        }
-        for (int i = 0; i < sortedArray.length; i++) {
-            for (int j = 1; j < sortedArray.length; j++) {
-                if (sortedArray[j-1] > sortedArray[j]) {
-                    int temp = sortedArray[j - 1];
-                    sortedArray[j - 1] = sortedArray [j];
-                    sortedArray[j] = temp;
-                }
-            }
-        }
+        
         return sortedArray;
     }
 
