@@ -68,15 +68,14 @@ public class Arrays {
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')','<','>','/','?'};
         int i = 0;
-        for (i = 0; i < password.charAt(i); i++); {
-            while (password.charAt(i) == alphabet) {
-
+        for (int i = 0; i < alphabet.length; i++) {
+            alphabet[i] = password.charAt(i);
             }
+            // print that character now, then do it for the next one
         }
         return answer;
 
         // loops still get the best of me
-    }
 
     // Create a method that will sort an Array of integers from smallest to greatest.
     // NOTE: You CANNOT use the built in Array.sort method
