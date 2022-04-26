@@ -31,6 +31,7 @@ public class Arrays {
     // Array: {12,2,3,4,1,0}
     public static void Arraysums() {
         Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter a number. If you would like the sum, enter 0.");
         int[] number = new int[10];
         int sum = 0;
         int inputNumber = keyboard.nextInt();
@@ -40,6 +41,7 @@ public class Arrays {
         inputNumber = keyboard.nextInt();
         }
         System.out.println("The total of the integers is " + sum );
+        System.out.println(number);
             
     }
 
