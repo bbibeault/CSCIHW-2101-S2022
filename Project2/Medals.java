@@ -92,14 +92,6 @@ public class Medals {
         // Gold    Silver    Bronze
         // 4       4         5
         ArrayList<Integer> medalCounts = new ArrayList<Integer>();
-
-        int rows = counts.length;
-        int columns = counts[0].length;
-
-        for (int i = 0; i < rows; i++) {
-            
-        }
-
     }
 
 
