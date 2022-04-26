@@ -71,6 +71,16 @@ public class Medals {
         // Process the ith row
         // Print each row element and update the row total
         // Display the row total and print a new line
+        for (int i = 0; i < COUNTRIES; i++) {
+            System.out.printf("%15s", countries[i]);
+            int total = 0;
+            for (int j = 0; j < MEDALS; j++) {
+                System.out.printf("%8d", counts[i][j]);
+                total = total + counts[i][j];
+            }
+            System.out.printf("%8d\n", total);
+            }
+        }
        
         // Display the total medals of each medal class
         // First create an Integer ArrayList called medalCounts
@@ -81,9 +91,16 @@ public class Medals {
         // print the Array list and chart to look like this
         // Gold    Silver    Bronze
         // 4       4         5
-    }
-}
+        ArrayList<Integer> medalCounts = new ArrayList<Integer>();
 
+        int rows = counts.length;
+        int columns = counts[0].length;
+
+        for (int i = 0; i < rows; i++) {
+            
+        }
+
+    }
 
 
 
