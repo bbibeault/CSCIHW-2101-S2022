@@ -82,10 +82,14 @@ public class Arrays {
     // Hint 2: 2 nested For loops should be all thats needed for the swapping logic
     public static int[] sorter(int[] nums){
         int [] sortedArray = new int[nums.length];
-        
+        Scanner keyboard = new Scanner(System.in);
+        int x = keyboard.nextInt();
+        // int max
+        // int min
+        for (x = 0; x < nums.length; x++) {
+            for ()
+        }
         return sortedArray;
-
-        // i also have no idea
     }
 
     public static void main(String[] args) {
