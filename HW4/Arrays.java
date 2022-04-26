@@ -30,19 +30,23 @@ public class Arrays {
     // Total: 22
     // Array: {12,2,3,4,1,0}
     public static void Arraysums() {
+        int[] number = new int[10];
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter a number. If you would like the sum, enter 0.");
-        int[] number = new int[10];
         int sum = 0;
         int inputNumber = keyboard.nextInt();
         while (inputNumber > 0) {
             sum += inputNumber;
         System.out.println("Enter the next number. If you would like the sum, input 0. Current total is: " + sum);
+        while (keyboard.hasNextInt()) {
+            sum = keyboard.nextInt();
         inputNumber = keyboard.nextInt();
         }
         System.out.println("The total of the integers is " + sum );
-        System.out.println(number);  
+        System.out.println(number);
+        }   
     }
+    // number.add(num); somewhere?
 
     // Create a method that will brute force a password EX.
     // bruteForce("ZZZZ")

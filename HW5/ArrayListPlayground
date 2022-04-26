@@ -71,11 +71,14 @@ public class ArrayListPlayground {
     Scanner keyboard = new Scanner(System.in);
     ArrayList<Integer> inputNum = new ArrayList<Integer>();
     while (true) {
-        system.out.println("Enter a number for me to add. Click 0 to stop entering numbers.")
-        inputNum.add(keyboard.nextInt());
-            if (keyboard.nextInt()) == 0 {
-                sysout // total here
-            }
+        system.out.println("Enter a number to add to the array. Enter 0 to stop.")
+        int n = keyboard.nextInt;
+        if (n == 0) {
+            return inputNum;
+        }
+        else {
+            inputNum.add(n);
+        }
     }
 
 
