@@ -31,6 +31,14 @@ public class Arrays {
     // Array: {12,2,3,4,1,0}
     public static void Arraysums() {
         Scanner keyboard = new Scanner(System.in);
+        int sum = 0;
+        int inputNumber = keyboard.nextInt();
+        while (inputNumber > 0) {
+            sum += inputNumber;
+        System.out.println("Enter the next number. If you would like the sum, input 0. Current total is: " + sum);
+        inputNumber = keyboard.nextInt();
+        }
+            System.out.println("The total of the integers is " + sum );
     }
 
     // Create a method that will brute force a password EX.
