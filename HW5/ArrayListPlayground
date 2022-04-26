@@ -10,9 +10,9 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
-    ArrayList<integer> oneArray = new ArrayList<Integer>();
+    ArrayList<integer> oneArray = new ArrayList<Integer>(15);
     // b) Output the value of the tenth element of the array nums.
-    System.out.println(oneArray[9];
+        System.out.println("Element at index 10: " + oneArray[9])
     // c) Set the value of the 5th element of the array nums to 99.
     oneArray[4] = 99;
     // d) set the value of the 13th element to 15
@@ -21,6 +21,7 @@ public class ArrayListPlayground {
     oneArray[1] = 6;
     // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
     oneArray[8] = oneArray[12] + oneArray[1];
+            // GOOD
 
          
     // Question 2
@@ -33,14 +34,38 @@ public class ArrayListPlayground {
     weekArray.add("Friday");
     weekArray.add("Saturday");
     weekArray.add("Sunday");
-    Iterator<String>it = days.iterator;
+            // GOOD
 
     // b) output each of the days of the week
-
+        for (int i = 0; i < weekArray.size(); i++) {
+        system.out.println(weekArray.get(i));
+            // OR
+        for (String str : weekArray) {
+        system.out.println(str);
+    }
+            // GOOD
+            
     // c) output the days of the week that we have class
+        for (int i = 0; i == 1 || i == 3; i++) {
+            system.out.println(weekArray.get(i));
+        }
+            // OR
+        for (int i = 0; i < weekArray.length; i++) {
+            if (weekArray[i] == "Tuesday" || "Thursday")
+            system.out.println(weekArray.get(i))
+        }
+
+    }
 
     // d) change the arrayList to start on Sunday
-
+        String day = "Sunday";
+        int dayPosition = weekArray.indexOf(day);
+        weekArray.remove(dayPosition);
+        weekArray.add(0, day);
+        for (int i = 0; i < weekArray.size(); i++) {
+            system.out.println(weekArray.get(i));
+        }
+        
     // Question 3 
     // a) create an ArrayList and prompt the user for numbers to add to it until the number 0 is selected
     Scanner keyboard = new Scanner(System.in);
