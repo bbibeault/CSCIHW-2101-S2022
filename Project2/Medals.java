@@ -46,15 +46,11 @@ public class Medals {
             { 1, 1, 0 }
         };
         System.out.println("        Country    Gold    Silver    Bronze   Total");
-        int GrandTotal = 0;
-        int total = 0;
 
 
         // TO DO 
         // ----------------
         // Print countries, counts, and row totals (IE total medals by country)
-        for (int i = 0; i < COUNTRIES; i++) {
-
         // for formatting use these printf statements:
             // System.out.printf("%15s", countries[i]);
             // System.out.printf("%8d", counts[i][j]);
@@ -62,18 +58,9 @@ public class Medals {
         // These print statements are just for reference for the table above f you want to change them you can
         // HINTS:
         // You will need a nested for loop (IE for i less than COUNTRIES, and for j < MEDALS)
-        
         // Process the ith row
-        System.out.printf("%15s", countries[i]);
-
         // Print each row element and update the row total
-        for (int j = 0; j < MEDALS; j++) {
-            System.out.printf("%8d", counts[i][j]);
-            total = total + counts[i][j];
-        }
-
         // Display the row total and print a new line
-        System.out.printf("%8d\n", total);
        
         /*After that create an ARRAYLIST that is the total of each medal awarded (IE 4 gold, 4 silver, 5 bronze)
         print the total of each medal 
@@ -91,22 +78,6 @@ public class Medals {
         // print the Array list and chart to look like this
         // Gold    Silver    Bronze
         // 4       4         5
-        
-        ArrayList <Integer> medalCounts = new ArrayList<Integer>(); // OR int[] medalCounts;
-        int sumRow;
-        int sumCol;
-        int rows = counts.length;
-        int columns = counts[0].length;
-        for (int i = 0; i < counts[0].length; i++) {
-            sumCol = 0;
-            for (int j = 0; j < rows; j++) {
-                sumCol = sumCol + medalCounts[i][j];
-            }
-            System.out.println();
-
-        }
-        }
-    
     }
 }
 
