@@ -36,47 +36,18 @@ public class ArrayListPlayground {
     Iterator<String>it = days.iterator;
 
     // b) output each of the days of the week
-    while(it.hasNext()) {
-        String day = it.next();
-        system.outprintln(day);
-    }
 
     // c) output the days of the week that we have class
-    while(it.hasNext()) {
-        String day = it.next();
-        if(day.equals("Tuesday") || ("Thursday")) {
-            system.out.println(day);
-        }
-    }
 
     // d) change the arrayList to start on Sunday
-    String startDay = days.get(6);
-    for (int i = 6; i > 0; i--) {
-        days.set(i, days.get(i-1));
-    }
-    days.set(0, startDay);
 
     // Question 3 
     // a) create an ArrayList and prompt the user for numbers to add to it until the number 0 is selected
     Scanner keyboard = new Scanner(System.in);
-    ArrayList <Integer> arrayOne = new ArrayList <Integer>(1);
-    while (true) {
-        System.out.println("Enter any number you would like. Enter 0 to stop entering numbers.");
-        int n = keyboard.nextInt();
-        if (n == 0) {
-            break;
-        }
-        else {
-            arrayOne.add(n);
-        }
-    }
 
     // b) return the largest and smallest number
-    system.out.println("Largest number is " + largestVal(arrayOne));
-    system.out.println("Smallest number is " + smallestVal(arrayOne));
 
     // c) return the ArrayList sorted smallest to largest
-    system.out.println(Sorted(arrayOne));
 
     // d) take that ArrayList see if its size is divisable by 3 and then output the ArrayList in a matrix format
     // NOTE: make the matrix n X 3 so it can be n rows by 3 columns 
