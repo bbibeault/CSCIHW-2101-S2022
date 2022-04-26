@@ -92,6 +92,15 @@ public class Medals {
         // Gold    Silver    Bronze
         // 4       4         5
         ArrayList<Integer> medalCounts = new ArrayList<Integer>();
+        int goldMedals = 0;
+        int silverMedals = 0;
+        int bronzeMedals = 0;
+        for (int i = 0; i < COUNTRIES; i++) {
+            
+        }
+
+        }
+
     }
 
 
