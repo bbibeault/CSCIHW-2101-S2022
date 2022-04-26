@@ -80,7 +80,8 @@ public class Medals {
             }
             System.out.printf("%8d\n", total);
             }
-        }
+
+        // adjust others
        
         // Display the total medals of each medal class
         // First create an Integer ArrayList called medalCounts
@@ -91,10 +92,11 @@ public class Medals {
         // print the Array list and chart to look like this
         // Gold    Silver    Bronze
         // 4       4         5
-        ArrayList<Integer> medalCounts = new ArrayList<Integer>();
-        int goldMedals = 0;
-        int silverMedals = 0;
-        int bronzeMedals = 0;
+        
+        // ArrayList<Integer> medalCounts = new ArrayList<Integer>();
+        // int goldMedals = 0;
+        // int silverMedals = 0;
+        // int bronzeMedals = 0; 
         for (int i = 0; i < COUNTRIES; i++) {
             
         }

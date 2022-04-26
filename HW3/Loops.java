@@ -101,7 +101,7 @@ public class Loops {
             System.out.println("Enter the next number. If you would like the sum, input 0. Current total is: " + sum);
             inputNumber = keyboard.nextInt();
             }
-                System.out.println("The total of the integers is " + sum );
+            System.out.println("The total of the integers is " + sum );
         }
 
     public static void main(String[] args) {
