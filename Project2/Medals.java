@@ -21,6 +21,16 @@ public class Medals {
   United States       1       1       0       2
     */
 
+    /*After that create an ARRAYLIST that is the total of each medal awarded (IE 4 gold, 4 silver, 5 bronze)
+    print the total of each medal 
+    Hints:
+        int rows = counts.length; (get the rows)
+        int cols = counts[0].length; (gets the columns)   
+        counts[j][i] in a nested for loop would get you the totals of the column  
+        Gold    Silver    Bronze
+        4       4         5
+        */
+
     public static void main(String[] args) {
         final int COUNTRIES = 7;
         final int MEDALS = 3;
@@ -62,17 +72,10 @@ public class Medals {
         // Print each row element and update the row total
         // Display the row total and print a new line
        
-        /*After that create an ARRAYLIST that is the total of each medal awarded (IE 4 gold, 4 silver, 5 bronze)
-        print the total of each medal 
-        Hints:
-            int rows = counts.length; (get the rows)
-            int cols = counts[0].length; (gets the columns)   
-            counts[j][i] in a nested for loop would get you the totals of the column  
-            Gold    Silver    Bronze
-            4       4         5
-            */
         // Display the total medals of each medal class
-        // First create an Integer ArrayList called medalCounts | your rows are counts.length | your columns are counts[0].length
+        // First create an Integer ArrayList called medalCounts
+            // Your rows are counts.length
+            // Your columns are counts[0].length
         // Make a for loop that will calculate the sum for each column 
         // hint: make a temp variable for the sum and then at the end of the for loop add each sum of each column to the ArrayList 
         // print the Array list and chart to look like this
