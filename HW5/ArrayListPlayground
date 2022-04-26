@@ -65,14 +65,29 @@ public class ArrayListPlayground {
         for (int i = 0; i < weekArray.size(); i++) {
             system.out.println(weekArray.get(i));
         }
-        
+
     // Question 3 
     // a) create an ArrayList and prompt the user for numbers to add to it until the number 0 is selected
     Scanner keyboard = new Scanner(System.in);
+    ArrayList<Integer> inputNum = new ArrayList<Integer>();
+    while (true) {
+        system.out.println("Enter a number for me to add. Click 0 to stop entering numbers.")
+        inputNum.add(keyboard.nextInt());
+            if (keyboard.nextInt()) == 0 {
+                sysout // total here
+            }
+    }
+
 
     // b) return the largest and smallest number
+    int max = Collections.max(inputNum);
+    system.out.println("Max number is: " + max);
+    int min = Collections.min(inputNum);
+    system.out.println("Min number is: " min);
 
     // c) return the ArrayList sorted smallest to largest
+    Collections.sort(inputNum);
+    system.out.println("Least to greatest is: " + inputNum);
 
     // d) take that ArrayList see if its size is divisable by 3 and then output the ArrayList in a matrix format
     // NOTE: make the matrix n X 3 so it can be n rows by 3 columns 
