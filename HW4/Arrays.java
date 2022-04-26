@@ -41,8 +41,7 @@ public class Arrays {
         inputNumber = keyboard.nextInt();
         }
         System.out.println("The total of the integers is " + sum );
-        System.out.println(number);
-            
+        System.out.println(number);  
     }
 
     // Create a method that will brute force a password EX.
@@ -66,6 +65,8 @@ public class Arrays {
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')','<','>','/','?'};
 
         return answer;
+
+        // i genuinely have no idea
     }
 
     // Create a method that will sort an Array of integers from smallest to greatest.
@@ -79,6 +80,8 @@ public class Arrays {
         int [] sortedArray = new int[nums.length];
         
         return sortedArray;
+
+        // i also have no idea
     }
 
     public static void main(String[] args) {
