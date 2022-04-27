@@ -98,14 +98,15 @@ public class Medals {
         int columns = counts[0].length;
         int rowSum;
         int columnSum;
-        System.out.println("          Total");
+        System.out.print("          Total");
         for (int i = 0; i < columns; i++) {
             columnSum = 0;
             for (int j = 0; j < rows; j++) {
                 columnSum = columnSum + counts[j][i];
             }
+            System.out.printf("%8d", columnSum);
         }
             
-        }
+    }
 
-        }
+}
