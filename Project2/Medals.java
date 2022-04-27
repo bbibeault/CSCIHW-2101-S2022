@@ -92,18 +92,20 @@ public class Medals {
         // print the Array list and chart to look like this
         // Gold    Silver    Bronze
         // 4       4         5
-        
-        // ArrayList<Integer> medalCounts = new ArrayList<Integer>();
-        // int goldMedals = 0;
-        // int silverMedals = 0;
-        // int bronzeMedals = 0; 
-        for (int i = 0; i < COUNTRIES; i++) {
+    
+        ArrayList<Integer> medalCounts = new ArrayList<Integer>();
+        int rows = counts.length;
+        int columns = counts[0].length;
+        int rowSum;
+        int columnSum;
+        System.out.println("          Total");
+        for (int i = 0; i < columns; i++) {
+            columnSum = 0;
+            for (int j = 0; j < rows; j++) {
+                columnSum = columnSum + counts[j][i];
+            }
+        }
             
         }
 
         }
-
-    }
-
-
-
