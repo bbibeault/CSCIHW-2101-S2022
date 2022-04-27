@@ -10,9 +10,9 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
-    ArrayList<Integer> oneArray = new ArrayList<Integer>();
+    ArrayList<Integer> oneArray = new ArrayList<Integer>(15);
     // b) Output the value of the tenth element of the array nums.
-    oneArray.get(9);
+    System.out.println(oneArray.get(9));
     // c) Set the value of the 5th element of the array nums to 99.
     oneArray.set(4, 99);
     // d) set the value of the 13th element to 15
@@ -58,7 +58,7 @@ public class ArrayListPlayground {
         System.out.println("Enter a number to add to the array. Enter 0 to stop.");
         int n = keyboard.nextInt();
         if (n == 0) {
-            return inputNum;
+            System.out.println(inputNum);
         }
         else {
             inputNum.add(n);
@@ -67,14 +67,25 @@ public class ArrayListPlayground {
 
 
     // b) return the largest and smallest number
-    int max = Collections.max(inputNum);
-    System.out.println("Max number is: " + max);
-    int min = Collections.min(inputNum);
-    System.out.println("Min number is: " + min);
+    
+    // int s = inputNum.size();
+    // int min = inputNum.get(0);
+    // for (int i = 0; i < s; i++) {
+    //     if (inputNum.get(i) < min) {
+    //         min = inputNum.get(i);
+    //     }
+    // }
+    // int max = inputNum.get(0);
+    // for (int i = 1; i < s; i++) {
+    //     if (inputNum.get(i) > max) {
+    //         max = inputNum.get(i);
+    //     }
+    // }
+
 
     // c) return the ArrayList sorted smallest to largest
-    Collections.sort(inputNum);
-    System.out.println("Least to greatest is: " + inputNum);
+    // Collections.sort(inputNum);
+    // System.out.println("Least to greatest is: " + inputNum);
 
     // d) take that ArrayList see if its size is divisable by 3 and then output the ArrayList in a matrix format
     // NOTE: make the matrix n X 3 so it can be n rows by 3 columns 
@@ -98,7 +109,8 @@ public class ArrayListPlayground {
     //             System.out.println();
     //         }
     //     }
-    System.out.println("I am clueless");
+   
+    // System.out.println("I am clueless");
 
 }
 }
