@@ -68,24 +68,24 @@ public class ArrayListPlayground {
 
     // b) return the largest and smallest number
     
-    // int s = inputNum.size();
-    // int min = inputNum.get(0);
-    // for (int i = 0; i < s; i++) {
-    //     if (inputNum.get(i) < min) {
-    //         min = inputNum.get(i);
-    //     }
-    // }
-    // int max = inputNum.get(0);
-    // for (int i = 1; i < s; i++) {
-    //     if (inputNum.get(i) > max) {
-    //         max = inputNum.get(i);
-    //     }
-    // }
+    int s = inputNum.size();
+    int min = inputNum.get(0);
+    for (int i = 0; i < s; i++) {
+        if (inputNum.get(i) < min) {
+            min = inputNum.get(i);
+        }
+    }
+    int max = inputNum.get(0);
+    for (int i = 1; i < s; i++) {
+        if (inputNum.get(i) > max) {
+            max = inputNum.get(i);
+        }
+    }
 
     // c) return the ArrayList sorted smallest to largest
     
-    // Collections.sort(inputNum);
-    // System.out.println("Least to greatest is: " + inputNum);
+    Collections.sort(inputNum);
+    System.out.println("Least to greatest is: " + inputNum);
 
     // d) take that ArrayList see if its size is divisable by 3 and then output the ArrayList in a matrix format
     // NOTE: make the matrix n X 3 so it can be n rows by 3 columns 
@@ -109,7 +109,6 @@ public class ArrayListPlayground {
     //             System.out.println();
     //         }
     //     }
-    // System.out.println("I am clueless");
 
 }
 }
