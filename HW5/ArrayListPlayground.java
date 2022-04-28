@@ -13,17 +13,37 @@ public class ArrayListPlayground {
     // Question 1
     // Write Java statements that do the following:
     // a) Declare an arrayList nums of 15 elements of type int.
+    System.out.println("--- Question 1 ---");
     ArrayList<Integer> oneArray = new ArrayList<Integer>(15);
+    oneArray.add(1);
+    oneArray.add(2);
+    oneArray.add(3);
+    oneArray.add(4);
+    oneArray.add(5);
+    oneArray.add(6);
+    oneArray.add(7);
+    oneArray.add(8);
+    oneArray.add(9);
+    oneArray.add(10);
+    oneArray.add(11);
+    oneArray.add(12);
+    oneArray.add(13);
+    oneArray.add(14);
+    oneArray.add(15);
     // b) Output the value of the tenth element of the array nums.
-    System.out.println(oneArray.get(9));
+    System.out.println(oneArray.get(10));
     // c) Set the value of the 5th element of the array nums to 99.
-    oneArray.set(4, 99);
+    oneArray.set(5, 99);
+    System.out.println(oneArray.get(5));
     // d) set the value of the 13th element to 15
-    oneArray.set(12, 15);
+    oneArray.set(13, 15);
+    System.out.println(oneArray.get(13));
     // d) set the value of the 2nd element to 6
-    oneArray.set(1, 6);
+    oneArray.set(2, 6);
+    System.out.println(oneArray.get(2));
     // d) Set the value of the 9th element of the array nums to the sum of the 13th and 2nd elements of the array nums.
-    oneArray.set(8, (oneArray.get(12) + oneArray.get(1)));
+    oneArray.set(9, (oneArray.get(13) + oneArray.get(2)));
+    System.out.println(oneArray.get(9));
          
     // Question 2
     // a) create an arrayList of Strings that contain each day of the week.(starting on monday)
@@ -37,14 +57,17 @@ public class ArrayListPlayground {
     weekArray.add("Sunday");
 
     // b) output each of the days of the week
+    System.out.println("--- Question 2b ---");
     System.out.println(weekArray);
             
     // c) output the days of the week that we have class
+    System.out.println("--- Question 2c ---");
         for (int i = 0; i == 1 || i == 3; i++) {
             System.out.println(weekArray.get(i));
         }
 
     // d) change the arrayList to start on Sunday
+    System.out.println("--- Question 2d ---");
         String day = "Sunday";
         int dayPosition = weekArray.indexOf(day);
         weekArray.remove(dayPosition);
@@ -55,22 +78,19 @@ public class ArrayListPlayground {
 
     // Question 3 
     // a) create an ArrayList and prompt the user for numbers to add to it until the number 0 is selected
+    System.out.println("--- Question 3a ---");
     Scanner keyboard = new Scanner(System.in);
     ArrayList<Integer> inputNum = new ArrayList<Integer>();
-    while (true) {
-        System.out.println("Enter a number to add to the array. Enter 0 to stop.");
-        int n = keyboard.nextInt();
-        if (n == 0) {
-            System.out.println(inputNum);
-        }
-        else {
+    int n = keyboard.nextInt();
+        while ( n > 0) {
             inputNum.add(n);
         }
-    }
-
+        if (n == 0) {
+            System.out.println();
+        }
 
     // b) return the largest and smallest number
-    
+    System.out.println("--- Question 3b ---");
     int s = inputNum.size();
     int min = inputNum.get(0);
     for (int i = 0; i < s; i++) {
@@ -86,7 +106,7 @@ public class ArrayListPlayground {
     }
 
     // c) return the ArrayList sorted smallest to largest
-    
+    System.out.println("--- Question 3c ---");
     Collections.sort(inputNum);
     System.out.println("Least to greatest is: " + inputNum);
 
@@ -129,7 +149,7 @@ public class ArrayListPlayground {
     //         // to find numbers divisible by three
     //     }
     // }
-    
+
     for(int i=0;i<inputNum.size();i++)
         {
             System.out.print(inputNum.get(i)+" ");
