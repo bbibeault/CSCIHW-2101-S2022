@@ -62,9 +62,11 @@ public class ArrayListPlayground {
             
     // c) output the days of the week that we have class
     System.out.println("--- Question 2c ---");
-        for (int i = 0; i == 1 || i == 3; i++) {
-            System.out.println(weekArray.get(i));
-        }
+    System.out.println(weekArray.get(1));
+    System.out.println(weekArray.get(3));
+        // for (int i = 0; i == 1 || i == 3; i++) {
+        //     System.out.println(weekArray.get(i));
+        // }
 
     // d) change the arrayList to start on Sunday
     System.out.println("--- Question 2d ---");
@@ -80,35 +82,53 @@ public class ArrayListPlayground {
     // a) create an ArrayList and prompt the user for numbers to add to it until the number 0 is selected
     System.out.println("--- Question 3a ---");
     Scanner keyboard = new Scanner(System.in);
+    ArrayList<Integer> userInputArray = new ArrayList<Integer>();
+     System.out.println("Enter the numbers to add in ArrayList");
+     System.out.println("Number:");
+     int data = keyboard.nextInt();
+     while (data!=0) {
+     userInputArray.add(data);
+     System.out.println(userInputArray);
+     System.out.println("Number:");
+     data = keyboard.nextInt();
+  }
     ArrayList<Integer> inputNum = new ArrayList<Integer>();
-    int n = keyboard.nextInt();
-        while ( n > 0) {
-            inputNum.add(n);
-        }
-        if (n == 0) {
-            System.out.println();
-        }
+    // int n = keyboard.nextInt();
+    //     while ( n != 0) {
+    //         inputNum.add(n);
+    //     }
+    //     System.out.println(inputNum);
+        // if (n == 0) {
+        //     System.out.println(inputNum);
+        // }
 
     // b) return the largest and smallest number
     System.out.println("--- Question 3b ---");
-    int s = inputNum.size();
-    int min = inputNum.get(0);
-    for (int i = 0; i < s; i++) {
-        if (inputNum.get(i) < min) {
-            min = inputNum.get(i);
-        }
-    }
-    int max = inputNum.get(0);
-    for (int i = 1; i < s; i++) {
-        if (inputNum.get(i) > max) {
-            max = inputNum.get(i);
-        }
-    }
+    // int s = inputNum.size();
+    // int min = inputNum.get(0);
+    // for (int i = 0; i < s; i++) {
+    //     if (inputNum.get(i) < min) {
+    //         min = inputNum.get(i);
+    //     }
+    // }
+    // int max = inputNum.get(0);
+    // for (int i = 1; i < s; i++) {
+    //     if (inputNum.get(i) > max) {
+    //         max = inputNum.get(i);
+        // }
+    // }
+    System.out.println();
+
+    Integer max = Collections.max(userInputArray);
+    Integer min = Collections.min(userInputArray);
+    System.out.println("ArrayList values : " + userInputArray);
+    System.out.println("ArrayList max value : " + max);
+    System.out.println("ArrayList min value: " + min);
 
     // c) return the ArrayList sorted smallest to largest
     System.out.println("--- Question 3c ---");
-    Collections.sort(inputNum);
-    System.out.println("Least to greatest is: " + inputNum);
+    Collections.sort(userInputArray);
+    System.out.println("Least to greatest is: " + userInputArray);
 
     // d) take that ArrayList see if its size is divisable by 3 and then output the ArrayList in a matrix format
     // NOTE: make the matrix n X 3 so it can be n rows by 3 columns 
@@ -150,9 +170,9 @@ public class ArrayListPlayground {
     //     }
     // }
 
-    for(int i=0;i<inputNum.size();i++)
+    for(int i = 0;i < userInputArray.size();i++)
         {
-            System.out.print(inputNum.get(i)+" ");
+            System.out.print(userInputArray.get(i)+" ");
             if((i+1)%3==0)
             {
                 System.out.println();

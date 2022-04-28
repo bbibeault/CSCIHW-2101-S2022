@@ -106,7 +106,7 @@ public class Medals {
             }
             System.out.printf("%8d", columnSum);
         }
-            
+    System.out.println();      
     }
 
 }
