@@ -129,6 +129,7 @@ public class ArrayListPlayground {
     //         // to find numbers divisible by three
     //     }
     // }
+    
     for(int i=0;i<inputNum.size();i++)
         {
             System.out.print(inputNum.get(i)+" ");
