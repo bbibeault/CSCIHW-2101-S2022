@@ -110,5 +110,12 @@ public class ArrayListPlayground {
     //         }
     //     }
 
+    for (int i : inputNum) {
+        if (i % 3 == 0) {
+            System.out.println("This number is divisible by three: " + i);
+            // to find numbers divisible by three
+        }
+    }
+
 }
 }
