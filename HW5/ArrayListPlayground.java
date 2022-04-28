@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.regex.MatchResult;
+
+import javax.swing.plaf.synth.SynthSpinnerUI;
 
 public class ArrayListPlayground {
     public static void main(String[] args) {
@@ -110,12 +113,22 @@ public class ArrayListPlayground {
     //         }
     //     }
 
-    for (int i : inputNum) {
-        if (i % 3 == 0) {
-            System.out.println("This number is divisible by three: " + i);
-            // to find numbers divisible by three
+    int matrix [][] = 
+    {{ keyboard.nextInt() }};
+
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[0].length; j++) {
+            System.out.println(matrix[i][j] + " ");
         }
+        System.out.println();
     }
+
+    // for (int i : inputNum) {
+    //     if (i % 3 == 0) {
+    //         System.out.println("This number is divisible by three: " + i);
+    //         // to find numbers divisible by three
+    //     }
+    // }
     for(int i=0;i<inputNum.size();i++)
         {
             System.out.print(inputNum.get(i)+" ");
