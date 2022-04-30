@@ -92,7 +92,6 @@ public class ArrayListPlayground {
      System.out.println("Number:");
      data = keyboard.nextInt();
   }
-    ArrayList<Integer> inputNum = new ArrayList<Integer>();
     // int n = keyboard.nextInt();
     //     while ( n != 0) {
     //         inputNum.add(n);
