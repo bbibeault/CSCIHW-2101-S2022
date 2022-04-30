@@ -154,32 +154,24 @@ public class ArrayListPlayground {
     //     }
 
     System.out.println("--- Question 3d ---");
+    // GETTING TOTAL NUMBER OF ARRAY
+    System.out.println(userInputArray.size());
+    // SEEING IF ARRAY LIST TOTAL IS DIVISIBLE BY THREE
+    for (userInputArray.size();;) {
+        if (userInputArray.size() % 3 == 0) {
+            System.out.println("Array is divisible by 3.");
+            // get infinite loop lol
+        // } else (userInputArray.add(keyboard.nextInt()));
+        }
+    }
 
-    // int matrix [][] = 
-    // {{ keyboard.nextInt() }};
-
-    // for (int i = 0; i < matrix.length; i++) {
-    //     for (int j = 0; j < matrix[0].length; j++) {
-    //         System.out.println(matrix[i][j] + " ");
+    // for(int i = 0;i < userInputArray.size();i++) {
+    //     System.out.print(userInputArray.get(i)+" ");
+    //     if((i+1)%3==0) {
+    //         System.out.println();
     //     }
-    //     System.out.println();
     // }
-
-    // for (int i : inputNum) {
-    //     if (i % 3 == 0) {
-    //         System.out.println("This number is divisible by three: " + i);
-    //         // to find numbers divisible by three
-    //     }
-    // }
-
-    // for(int i = 0;i < userInputArray.size();i++)
-    //     {
-    //         System.out.print(userInputArray.get(i)+" ");
-    //         if((i+1)%3==0)
-    //         {
-    //             System.out.println();
-    //         }
-    //     }
+    // unreachable??
 
 }
 }
