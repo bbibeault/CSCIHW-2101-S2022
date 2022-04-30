@@ -153,15 +153,17 @@ public class ArrayListPlayground {
     //         }
     //     }
 
-    int matrix [][] = 
-    {{ keyboard.nextInt() }};
+    System.out.println("--- Question 3d ---");
 
-    for (int i = 0; i < matrix.length; i++) {
-        for (int j = 0; j < matrix[0].length; j++) {
-            System.out.println(matrix[i][j] + " ");
-        }
-        System.out.println();
-    }
+    // int matrix [][] = 
+    // {{ keyboard.nextInt() }};
+
+    // for (int i = 0; i < matrix.length; i++) {
+    //     for (int j = 0; j < matrix[0].length; j++) {
+    //         System.out.println(matrix[i][j] + " ");
+    //     }
+    //     System.out.println();
+    // }
 
     // for (int i : inputNum) {
     //     if (i % 3 == 0) {
@@ -170,14 +172,14 @@ public class ArrayListPlayground {
     //     }
     // }
 
-    for(int i = 0;i < userInputArray.size();i++)
-        {
-            System.out.print(userInputArray.get(i)+" ");
-            if((i+1)%3==0)
-            {
-                System.out.println();
-            }
-        }
+    // for(int i = 0;i < userInputArray.size();i++)
+    //     {
+    //         System.out.print(userInputArray.get(i)+" ");
+    //         if((i+1)%3==0)
+    //         {
+    //             System.out.println();
+    //         }
+    //     }
 
 }
 }
