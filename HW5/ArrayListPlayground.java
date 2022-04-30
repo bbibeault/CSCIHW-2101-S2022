@@ -164,10 +164,10 @@ public class ArrayListPlayground {
         // } else (userInputArray.add(keyboard.nextInt()));
         }
     }
-
-    // for(int i = 0;i < userInputArray.size();i++) {
-    //     System.out.print(userInputArray.get(i)+" ");
-    //     if((i+1)%3==0) {
+    // TO PRINT ARRAY IN A MATRIX
+    // for(int i = 0; i < userInputArray.size(); i++) {
+    //     System.out.print(userInputArray.get(i) + " ");
+    //     if((i+1) % 3 == 0) {
     //         System.out.println();
     //     }
     // }
