@@ -157,7 +157,6 @@ public class ArrayListPlayground {
     // GETTING TOTAL NUMBER OF ARRAY
     System.out.println(userInputArray.size());
     // SEEING IF ARRAY LIST TOTAL IS DIVISIBLE BY THREE
-    // for (int i = 0; i < userInputArray.size(); i++) {
     if (userInputArray.size() % 3 == 0) {
         System.out.println("Array is divisible by 3.");
             // TO PRINT ARRAY IN A MATRIX
@@ -172,10 +171,19 @@ public class ArrayListPlayground {
         System.out.println("Array is not divisible by 3.");
         System.out.println("Please add another number to the Array.");
         userInputArray.add(keyboard.nextInt());
+    } if (userInputArray.size() % 3 == 0) {
+            System.out.println("Array is divisible by 3.");
+        } else if (userInputArray.size() % 3 != 0) {
+                System.out.println("Array is not divisible by 3.");
+                System.out.println("Please add another number to the Array.");
+                userInputArray.add(keyboard.nextInt());
+        } if (userInputArray.size() % 3 == 0)
+                System.out.println("Array is divisible by 3.");;
+            for (int i = 0; i < userInputArray.size(); i++) {
+                System.out.print(userInputArray.get(i) + " ");
+                if((i+1) % 3 == 0) {
+                    System.out.println();
+                }
+            }
     }
-    // what do i put here to get more input added into array and have it re run
-
-    // }
-
-}
 }
