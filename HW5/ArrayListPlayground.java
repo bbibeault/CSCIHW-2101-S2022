@@ -154,7 +154,7 @@ public class ArrayListPlayground {
 
     System.out.println("--- Question 3d ---");
     // GETTING TOTAL NUMBER OF ARRAY
-    System.out.println(userInputArray.size());
+    // System.out.println(userInputArray.size());
     // SEEING IF ARRAY LIST TOTAL IS DIVISIBLE BY THREE
     if (userInputArray.size() % 3 == 0) {
         System.out.println("Array is divisible by 3.");
@@ -167,17 +167,15 @@ public class ArrayListPlayground {
     }
         // IF ARRAY IS NOT DIVISIBLE BY THREE
     } else if (userInputArray.size() % 3 != 0) {
-        System.out.println("Array is not divisible by 3.");
-        System.out.println("Please add another number to the Array.");
+        System.out.println("Array is not divisible by 3. Please add another number to the Array.");
         userInputArray.add(keyboard.nextInt());
     } if (userInputArray.size() % 3 == 0) {
             System.out.println("Array is divisible by 3.");
         } else if (userInputArray.size() % 3 != 0) {
-                System.out.println("Array is not divisible by 3.");
-                System.out.println("Please add another number to the Array.");
+                System.out.println("Array is not divisible by 3. Please add another number to the Array.");
                 userInputArray.add(keyboard.nextInt());
         } if (userInputArray.size() % 3 == 0)
-                System.out.println("Array is divisible by 3.");;
+                // System.out.println("Array is divisible by 3.");;
             for (int i = 0; i < userInputArray.size(); i++) {
                 System.out.print(userInputArray.get(i) + " ");
                 if((i+1) % 3 == 0) {
