@@ -184,5 +184,5 @@ public class ArrayListPlayground {
                     System.out.println();
                 }
             }
-    }
+        }
 }
