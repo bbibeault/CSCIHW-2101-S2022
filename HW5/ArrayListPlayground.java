@@ -116,7 +116,7 @@ public class ArrayListPlayground {
     //         max = inputNum.get(i);
         // }
     // }
-    System.out.println();
+    // System.out.println();
 
     Integer max = Collections.max(userInputArray);
     Integer min = Collections.min(userInputArray);
