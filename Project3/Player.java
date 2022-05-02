@@ -10,5 +10,4 @@ public class Player {
     public void runDeaths(){
         int deaths = 1;
     }
-
 }
