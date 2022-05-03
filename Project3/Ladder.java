@@ -20,12 +20,13 @@ public class Ladder {
     public Ladder(int panels){
     }
 
-    // create an array list of integers for the selections 
-    ArrayList<Integer> selectionList = new ArrayList<Integer>();
-
+    // create an array list of integers for the selections
     // ----make a int method to get the selection from the user called getSelection()---
     Scanner keyboard = new Scanner (System.in);
-    int getSelection = keyboard.nextInt();
+    ArrayList<Integer> selectionList = new ArrayList<Integer>();
+    int userSelect = keyboard.nextInt();
+    selectionLost.add(userSelect);
+// error?
 
     // create a int variable for converetedSelection
     int convertedSelection;
@@ -40,6 +41,7 @@ public class Ladder {
         // return the converted selection
     // else print selection is invalid 
 
+    // check this
     // if (userSelection == "l") {
     //     char l = 0;
     //     int conversion0 = Character.getNumericValue(l);
@@ -58,10 +60,12 @@ public class Ladder {
 
     // REMEMBER 2d array is [row][column]
     // create a 2d array method called createLadder()
-    int [][] x = createLadder();
-    public static int [][] createLadder();
-    for (int i = 1; i < ladder.length; i++); {
-        for (int j = 1; j < ladder[i].length; i++);
+
+// check this
+    // int [][] x = createLadder();
+    // public static int [][] createLadder();
+    // for (int i = 1; i < ladder.length; i++); {
+    //     for (int j = 1; j < ladder[i].length; i++);
 
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
@@ -93,6 +97,8 @@ public class Ladder {
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder
     // 2. Integer ArrayList called selections
+
+// make method here
     
     // This method is pretty complex and will calculate the selections from the user in getSelection
     // and see if it matches up the 2d array from createLadder
