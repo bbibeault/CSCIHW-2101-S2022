@@ -39,10 +39,7 @@ public class Ladder {
         // Print the selection selected
         // return the converted selection
     // else print selection is invalid 
-    String userSelection = keyboard.nextLine();
-    if (userSelection == L || userSelection == l) {
-
-    }
+    String userSelection = keyboard.next();
     // if (userSelection == "l") {
     //     char l = 0;
     //     int conversion0 = Character.getNumericValue(l);
@@ -62,6 +59,7 @@ public class Ladder {
     // REMEMBER 2d array is [row][column]
     
     // create a 2d array method called createLadder()
+    
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
     // the i variable will check for the ladder.length in the logic statement
@@ -128,4 +126,5 @@ public class Ladder {
             System.out.println("ERROR LADDER IS NOT CREATED OR IS NULL...");
         }
     }
+}
 }    
