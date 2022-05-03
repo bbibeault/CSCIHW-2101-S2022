@@ -1,3 +1,5 @@
+package Project3;
+
 public class Ladder {
     // Panels are the physical glass or tempered glass sheets
     public int panels;
