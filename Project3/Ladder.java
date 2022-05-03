@@ -2,6 +2,7 @@ package Project3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.function.IntFunction;
 
 public class Ladder {
     // Panels are the physical glass or tempered glass sheets
@@ -39,6 +40,9 @@ public class Ladder {
         // return the converted selection
     // else print selection is invalid 
     String userSelection = keyboard.nextLine();
+    if (userSelection == L || userSelection == l) {
+
+    }
     // if (userSelection == "l") {
     //     char l = 0;
     //     int conversion0 = Character.getNumericValue(l);
