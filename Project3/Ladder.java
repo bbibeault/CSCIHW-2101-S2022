@@ -99,6 +99,9 @@ public class Ladder {
         } return ladder;
     }
 
+    public boolean calcPanel (int[][] ladder, ArrayList<Integer> selections) {
+        
+    }
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder
     // 2. Integer ArrayList called selections
