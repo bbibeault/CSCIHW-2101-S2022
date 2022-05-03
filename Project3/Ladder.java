@@ -28,8 +28,6 @@ public class Ladder {
     ArrayList<Integer> arList = new ArrayList<Integer>();
 
     // ----make a int method to get the selection from the user called getSelection()---
-    Scanner keyboard = new Scanner(System.in);
-
        // create a int variable for converetedSelection
     // collect the selection ( use scanner here )
         // if selection is L or l convert the selection to 0
@@ -40,7 +38,33 @@ public class Ladder {
         // Print the selection selected
         // return the converted selection
     // else print selection is invalid
-
+    // REMEMBER 2d array is [row][column]
+    // create a 2d array method called createLadder()
+    // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
+    // make a double for loops with variables i and j
+    // the i variable will check for the ladder.length in the logic statement
+    // the j variable will check for the ladder[i].length in the logic statment
+    // inside the double for loop assign ladder[i][j] to a random int
+    // This part might be hard but know you can cast a variable with (int) and then a second statment
+    // to make a random variable between 1 and 2 using (2 * Math.random())
+    // combining those two is trivial
+    // then the magic happens:
+    // we need to determine that the random values create do not
+    // contain two of the same values per row IE:
+    // [0][1]
+    // [0][0] <- Duplicate
+    // [1][0]
+    // [1][1] <- Duplicate
+    // make an if statement inside the 'i' of the for loop to check 
+    // if the row 'i' of the ladder in the first column is equal 
+    // to the row 'i' of the second column 
+    // then a second nested if statement to check if the row 'i' of the first column
+    // is equal to 0 (use ==0 here)
+    // if this is true assign ladder[i][0]=1
+    // else we want the value to be 0 so ladder[i][0]=0
+    // after all is done return the ladder
+   
+    Scanner keyboard = new Scanner(System.in);
     public int getSelection(){
         System.out.println("Please pick a side: L = left | R = right");
     int selectionInput;
@@ -78,33 +102,6 @@ public class Ladder {
             }
         } return ladder;
     }
-
-    // REMEMBER 2d array is [row][column]
-    // create a 2d array method called createLadder()
-    // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
-    // make a double for loops with variables i and j
-    // the i variable will check for the ladder.length in the logic statement
-    // the j variable will check for the ladder[i].length in the logic statment
-    // inside the double for loop assign ladder[i][j] to a random int
-    // This part might be hard but know you can cast a variable with (int) and then a second statment
-    // to make a random variable between 1 and 2 using (2 * Math.random())
-    // combining those two is trivial
-
-    // then the magic happens:
-    // we need to determine that the random values create do not
-    // contain two of the same values per row IE:
-    // [0][1]
-    // [0][0] <- Duplicate
-    // [1][0]
-    // [1][1] <- Duplicate
-    // make an if statement inside the 'i' of the for loop to check 
-    // if the row 'i' of the ladder in the first column is equal 
-    // to the row 'i' of the second column 
-    // then a second nested if statement to check if the row 'i' of the first column
-    // is equal to 0 (use ==0 here)
-    // if this is true assign ladder[i][0]=1
-    // else we want the value to be 0 so ladder[i][0]=0
-    // after all is done return the ladder
 
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder
