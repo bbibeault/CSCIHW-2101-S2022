@@ -38,23 +38,22 @@ public class Ladder {
         // Print the selection selected
         // return the converted selection
     // else print selection is invalid 
-    String userSelection = keyboard.nextLine()
-    if (userSelection == "l") {
-        char l = 0;
-        int conversion0 = Character.getNumericValue(l);
-    } else if (userSelection == "L") {
-        char L = 0;
-        int conversion1 = Character.getNumericValue(L);
-    } else if (userSelection == "r") {
-        char r = 1;
-        int conversion2 = Character.getNumericValue(r);
-    } else if (userSelection == "R") {
-        char R = 1;
-        int conversion3 = Character.getNumericValue(R);
-    } else {
-        System.out.println("Please select a valid option.");
-    } 
-    // errors
+    String userSelection = keyboard.nextLine();
+    // if (userSelection == "l") {
+    //     char l = 0;
+    //     int conversion0 = Character.getNumericValue(l);
+    // } else if (userSelection == "L") {
+    //     char L = 0;
+    //     int conversion1 = Character.getNumericValue(L);
+    // } else if (userSelection == "r") {
+    //     char r = 1;
+    //     int conversion2 = Character.getNumericValue(r);
+    // } else if (userSelection == "R") {
+    //     char R = 1;
+    //     int conversion3 = Character.getNumericValue(R);
+    // } else {
+    //     System.out.println("Please select a valid option.");
+    // } 
 
     // REMEMBER 2d array is [row][column]
     
