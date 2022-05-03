@@ -40,6 +40,7 @@ public class Ladder {
         // return the converted selection
     // else print selection is invalid 
     String userSelection = keyboard.next();
+    if (userSelection )
     // if (userSelection == "l") {
     //     char l = 0;
     //     int conversion0 = Character.getNumericValue(l);
@@ -57,9 +58,14 @@ public class Ladder {
     // } 
 
     // REMEMBER 2d array is [row][column]
-    
     // create a 2d array method called createLadder()
-    
+    int [][] x = createLadder();
+    public static int [][] createLadder();
+    for (int i = 1; i < ladder.length; i++); {
+        for (int j = 1; j < ladder[i].length; i++)
+// put this info in here ^^^ then return to get array method
+
+
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
     // the i variable will check for the ladder.length in the logic statement
