@@ -63,26 +63,26 @@ public class Ladder {
    
     Scanner keyboard = new Scanner(System.in);
     public int getSelection(){
-        System.out.println("Please pick a side: L = left | R = right");
-    int selectionInput;
-    int convertedSelection;
-    selectionInput = keyboard.nextInt();
-    if (selectionInput == 'L') {
-        char L = 0;
-        int conversion1 = Character.getNumericValue('L');
-    } else if (selectionInput == 'l') {
-        char l = 0;
-        int conversion2 = Character.getNumericValue('l');
-    } else if (selectionInput == 'R') {
-        char R = 1;
-        int conversion3 = Character.getNumericValue('R');
-    } else if (selectionInput == 'r') {
-        char r = 1;
-        int conversion4 = Character.getNumericValue('r');
-    }  else {
-        System.out.println("Please select a valid option.");
-    }
-    return selectionInput;
+            System.out.println("Please pick a side: L = left | R = right");
+        int selectionInput;
+        int convertedSelection;
+        selectionInput = keyboard.nextInt();
+            if (selectionInput == 'L') {
+                char L = 0;
+                int conversion1 = Character.getNumericValue('L');
+                } else if (selectionInput == 'l') {
+                    char l = 0;
+                    int conversion2 = Character.getNumericValue('l');
+                } else if (selectionInput == 'R') {
+                    char R = 1;
+                    int conversion3 = Character.getNumericValue('R');
+                 } else if (selectionInput == 'r') {
+                    char r = 1;
+                    int conversion4 = Character.getNumericValue('r');
+            }  else {
+                System.out.println("Please select a valid option.");
+            }
+        return selectionInput;
     }
     public int [][] createLadder() {
         ladder = new int [10][2];
@@ -98,7 +98,6 @@ public class Ladder {
             }
         } return ladder;
     }
-
 
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder
