@@ -38,7 +38,7 @@ public class Ladder {
         // Print the selection selected
         // return the converted selection
     // else print selection is invalid 
-    String userSelection = keyboard.nextLine();
+    String userSelection = keyboard.nextLine()
     if (userSelection == "l") {
         char l = 0;
         int conversion0 = Character.getNumericValue(l);
@@ -54,13 +54,14 @@ public class Ladder {
     } else {
         System.out.println("Please select a valid option.");
     }
-    // else if not highlighted
+    // errors
 
     // REMEMBER 2d array is [row][column]
     
     // create a 2d array method called createLadder()
-    // inside this method create a new 2d array where your rows 
-    // are the panels and the colums is hard coded to 2 
+    int [][] createLadder = new int [2][];
+
+    // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
     // the i variable will check for the ladder.length in the logic statement
     // the j variable will check for the ladder[i].length in the logic statment
@@ -68,6 +69,8 @@ public class Ladder {
     // This part might be hard but know you can cast a variable with (int) and then a second statment
     // to make a random variable between 1 and 2 using (2 * Math.random())
     // combining those two is trivial
+
+
 
     // then the magic happens:
     // we need to determine that the random values create do not

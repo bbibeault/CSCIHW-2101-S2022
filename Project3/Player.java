@@ -8,6 +8,8 @@ public class Player {
     }
 
     // make a player object with lives parameter
+    public Player(int lives){
+    }
 
     // make a method to get the lives 
     // return lives (int)
