@@ -69,13 +69,13 @@ public class Ladder {
     selectionInput = keyboard.nextInt();
     if (selectionInput == 'L') {
         char L = 0;
-        int conversion0 = Character.getNumericValue('L');
+        int conversion1 = Character.getNumericValue('L');
     } else if (selectionInput == 'l') {
         char l = 0;
-        int conversion1 = Character.getNumericValue('l');
+        int conversion2 = Character.getNumericValue('l');
     } else if (selectionInput == 'R') {
         char R = 1;
-        int conversion2 = Character.getNumericValue('R');
+        int conversion3 = Character.getNumericValue('R');
     } else if (selectionInput == 'r') {
         char r = 1;
         int conversion4 = Character.getNumericValue('r');
