@@ -13,7 +13,12 @@ public class Player {
 
     // make a method to get the lives 
     // return lives (int)
+    public int getLives(){
+        return lives;
+    }
 
     // make a death method to subtract a life from the lives total (void)
-    
+    public void death(){
+        lives = lives - 1;
+    }
 }

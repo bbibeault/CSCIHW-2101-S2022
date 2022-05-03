@@ -53,14 +53,12 @@ public class Ladder {
         int conversion3 = Character.getNumericValue(R);
     } else {
         System.out.println("Please select a valid option.");
-    }
+    } 
     // errors
 
     // REMEMBER 2d array is [row][column]
     
     // create a 2d array method called createLadder()
-    int [][] createLadder = new int [2][];
-
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
     // the i variable will check for the ladder.length in the logic statement
@@ -127,5 +125,4 @@ public class Ladder {
             System.out.println("ERROR LADDER IS NOT CREATED OR IS NULL...");
         }
     }
-}
 }    
