@@ -5,10 +5,12 @@ public class Player {
 
     // make a Player object with no parameter (default lives = 5)
     public Player(){
+        lives = 5;
     }
 
     // make a player object with lives parameter
-    public Player(int lives){
+    public Player(int live){
+        lives = live;
     }
 
     // make a method to get the lives 

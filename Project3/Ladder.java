@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.function.IntFunction;
 
+import javax.sql.rowset.spi.SyncResolver;
+
 public class Ladder {
     // Panels are the physical glass or tempered glass sheets
     public int panels;
@@ -14,21 +16,25 @@ public class Ladder {
 
     // make a ladder object with no parameter (default 5 panels)
     public Ladder(){
+        panels = 5;
     }
 
     // make a ladder object with a panel parameter and assign the panels to that int
-    public Ladder(int panels){
+    public Ladder(int panel){
+        panel = panels;
     }
 
     // create an array list of integers for the selections
     ArrayList<Integer> arList = new ArrayList<Integer>();
 
     // ----make a int method to get the selection from the user called getSelection()---
-    int getSelection;
-
+    Scanner keyboard = new Scanner(System.in);
+    // Syso left or right
+    public int getSelection(){
+    int selectionInput;
+    selectionInput = keyboard.nextInt();
+   
     // create a int variable for converetedSelection
-    int convertedSelection;
-
     // collect the selection ( use scanner here )
         // if selection is L or l convert the selection to 0
         // Print the selection selected
@@ -37,35 +43,44 @@ public class Ladder {
         // convertSelection = 1
         // Print the selection selected
         // return the converted selection
-    // else print selection is invalid 
+    // else print selection is invalid
 
-// check this
-    // if (userSelection == "l") {
-    //     char l = 0;
-    //     int conversion0 = Character.getNumericValue(l);
-    // } else if (userSelection == "L") {
-    //     char L = 0;
-    //     int conversion1 = Character.getNumericValue(L);
-    // } else if (userSelection == "r") {
-    //     char r = 1;
-    //     int conversion2 = Character.getNumericValue(r);
-    // } else if (userSelection == "R") {
-    //     char R = 1;
-    //     int conversion3 = Character.getNumericValue(R);
-    // } else {
-    //     System.out.println("Please select a valid option.");
-    // } 
+    int convertedSelection;
+    if (selectionInput == 'L') {
+        char L = 0;
+        int conversion0 = Character.getNumericValue('L');
+    } else if (selectionInput == 'l') {
+        char l = 0;
+        int conversion1 = Character.getNumericValue('l');
+    } else if (selectionInput == 'R') {
+        char R = 1;
+        int conversion2 = Character.getNumericValue('R');
+    } else if (selectionInput == 'r') {
+        char r = 1;
+        int conversion4 = Character.getNumericValue('r');
+    }  else {
+        System.out.println("Please select a valid option.");
+    }
+    return selectionInput;
+}
+    public int [][] createLadder(){
+        ladder = new int [10][2];
+        for (int i = 0; i < ladder.length; i++) {
+            for (int j = 0; j < ladder[i].length; i++) {
+                ladder[i][j] = (int)(2 * Math.random());
+            }
+            if (ladder[i][0] == ladder[i][1]) {
+                if (ladder[i][0] == 0) {
+                    ladder [i][0] = 1;
+                } else {
+                    ladder[i][0] = 0;
+                }
+            }
+        } return ladder;
+    }
 
     // REMEMBER 2d array is [row][column]
     // create a 2d array method called createLadder()
-
-// check this
-    // int [][] x = createLadder();
-    // public static int [][] createLadder();
-    // for (int i = 1; i < ladder.length; i++); {
-    //     for (int j = 1; j < ladder[i].length; i++);
-    // }
-
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
     // the i variable will check for the ladder.length in the logic statement
@@ -75,11 +90,9 @@ public class Ladder {
     // to make a random variable between 1 and 2 using (2 * Math.random())
     // combining those two is trivial
 
-
-
     // then the magic happens:
     // we need to determine that the random values create do not
-    // contain to of the same values per row IE:
+    // contain two of the same values per row IE:
     // [0][1]
     // [0][0] <- Duplicate
     // [1][0]
