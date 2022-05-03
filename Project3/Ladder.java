@@ -21,12 +21,10 @@ public class Ladder {
     }
 
     // create an array list of integers for the selections
+    ArrayList<Integer> arList = new ArrayList<Integer>();
+
     // ----make a int method to get the selection from the user called getSelection()---
-    Scanner keyboard = new Scanner (System.in);
-    ArrayList<Integer> selectionList = new ArrayList<Integer>();
-    int userSelect = keyboard.nextInt();
-    selectionLost.add(userSelect);
-// error?
+    int getSelection;
 
     // create a int variable for converetedSelection
     int convertedSelection;
@@ -41,7 +39,7 @@ public class Ladder {
         // return the converted selection
     // else print selection is invalid 
 
-    // check this
+// check this
     // if (userSelection == "l") {
     //     char l = 0;
     //     int conversion0 = Character.getNumericValue(l);
@@ -66,6 +64,7 @@ public class Ladder {
     // public static int [][] createLadder();
     // for (int i = 1; i < ladder.length; i++); {
     //     for (int j = 1; j < ladder[i].length; i++);
+    // }
 
     // inside this method create a new 2d array where your rows are the panels and the colums is hard coded to 2 
     // make a double for loops with variables i and j
@@ -136,4 +135,3 @@ public class Ladder {
         }
     }
 }
-}    
