@@ -29,12 +29,8 @@ public class Ladder {
 
     // ----make a int method to get the selection from the user called getSelection()---
     Scanner keyboard = new Scanner(System.in);
-    // Syso left or right
-    public int getSelection(){
-    int selectionInput;
-    selectionInput = keyboard.nextInt();
-   
-    // create a int variable for converetedSelection
+
+       // create a int variable for converetedSelection
     // collect the selection ( use scanner here )
         // if selection is L or l convert the selection to 0
         // Print the selection selected
@@ -45,7 +41,11 @@ public class Ladder {
         // return the converted selection
     // else print selection is invalid
 
+    public int getSelection(){
+        System.out.println("Please pick a side: L = left | R = right");
+    int selectionInput;
     int convertedSelection;
+    selectionInput = keyboard.nextInt();
     if (selectionInput == 'L') {
         char L = 0;
         int conversion0 = Character.getNumericValue('L');
