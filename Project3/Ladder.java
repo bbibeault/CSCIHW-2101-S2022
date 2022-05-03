@@ -83,7 +83,7 @@ public class Ladder {
         System.out.println("Please select a valid option.");
     }
     return selectionInput;
-}
+    }
     public int [][] createLadder() {
         ladder = new int [10][2];
         for (int i = 0; i < ladder.length; i++) {
@@ -99,12 +99,10 @@ public class Ladder {
         } return ladder;
     }
 
+
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder
     // 2. Integer ArrayList called selections
-
-// make method here
-    
     // This method is pretty complex and will calculate the selections from the user in getSelection
     // and see if it matches up the 2d array from createLadder
     // First create an int size of the selections size 
