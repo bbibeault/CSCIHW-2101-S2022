@@ -4,6 +4,8 @@ public class Player {
     private int lives;
 
     // make a Player object with no parameter (default lives = 5)
+    public Player(){
+    }
 
     // make a player object with lives parameter
 

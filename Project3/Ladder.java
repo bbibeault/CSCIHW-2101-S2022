@@ -1,5 +1,8 @@
 package Project3;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Ladder {
     // Panels are the physical glass or tempered glass sheets
     public int panels;
@@ -9,14 +12,23 @@ public class Ladder {
     public int round = 1;
 
     // make a ladder object with no parameter (default 5 panels)
+    public Ladder(){
+    }
 
     // make a ladder object with a panel parameter and assign the panels to that int
+    public Ladder(int panels){
+    }
 
     // create an array list of integers for the selections 
+    ArrayList<Integer> selectionList = new ArrayList<Integer>();
 
     // ----make a int method to get the selection from the user called getSelection()---
+    Scanner keyboard = new Scanner (System.in);
+    int getSelection = keyboard.nextInt();
 
     // create a int variable for converetedSelection
+    int convertedSelection;
+
     // collect the selection ( use scanner here )
         // if selection is L or l convert the selection to 0
         // Print the selection selected
@@ -26,6 +38,23 @@ public class Ladder {
         // Print the selection selected
         // return the converted selection
     // else print selection is invalid 
+    String userSelection = keyboard.nextLine();
+    if (userSelection == "l") {
+        char l = 0;
+        int conversion0 = Character.getNumericValue(l);
+    } else if (userSelection == "L") {
+        char L = 0;
+        int conversion1 = Character.getNumericValue(L);
+    } else if (userSelection == "r") {
+        char r = 1;
+        int conversion2 = Character.getNumericValue(r);
+    } else if (userSelection == "R") {
+        char R = 1;
+        int conversion3 = Character.getNumericValue(R);
+    } else {
+        System.out.println("Please select a valid option.");
+    }
+    // else if not highlighted
 
     // REMEMBER 2d array is [row][column]
     
@@ -95,6 +124,5 @@ public class Ladder {
             System.out.println("ERROR LADDER IS NOT CREATED OR IS NULL...");
         }
     }
-    
-
 }
+}    
