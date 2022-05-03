@@ -13,17 +13,14 @@ public class Ladder {
     public int[][] ladder;
     // round counter
     public int round = 1;
-
     // make a ladder object with no parameter (default 5 panels)
     public Ladder(){
         panels = 5;
     }
-
     // make a ladder object with a panel parameter and assign the panels to that int
     public Ladder(int panel){
         panel = panels;
     }
-
     // create an array list of integers for the selections
     ArrayList<Integer> arList = new ArrayList<Integer>();
 
@@ -87,13 +84,12 @@ public class Ladder {
     }
     return selectionInput;
 }
-    public int [][] createLadder(){
+    public int [][] createLadder() {
         ladder = new int [10][2];
         for (int i = 0; i < ladder.length; i++) {
             for (int j = 0; j < ladder[i].length; i++) {
                 ladder[i][j] = (int)(2 * Math.random());
-            }
-            if (ladder[i][0] == ladder[i][1]) {
+            } if (ladder[i][0] == ladder[i][1]) {
                 if (ladder[i][0] == 0) {
                     ladder [i][0] = 1;
                 } else {
