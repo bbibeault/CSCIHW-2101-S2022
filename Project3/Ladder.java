@@ -100,6 +100,9 @@ public class Ladder {
     }
 
     public boolean calcPanel (int[][] ladder, ArrayList<Integer> selections) {
+        int size = selections.size();
+        System.out.println(round);
+        int arrayt = 
     }
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder 
