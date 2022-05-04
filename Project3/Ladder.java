@@ -100,10 +100,9 @@ public class Ladder {
     }
 
     public boolean calcPanel (int[][] ladder, ArrayList<Integer> selections) {
-        
     }
     // create a boolean method called calcPanel that takes in the following parameters:
-    // 1. 2d int array ladder
+    // 1. 2d int array ladder 
     // 2. Integer ArrayList called selections
     // This method is pretty complex and will calculate the selections from the user in getSelection
     // and see if it matches up the 2d array from createLadder
