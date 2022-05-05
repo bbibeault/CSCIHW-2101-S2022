@@ -4,10 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Player play = new Player(10);
         Ladder ladder = new Ladder(5);
+        int panels = 5;
         int[][] laddercreate = ladder.createLadder();
         ladder.printLadderBlank();
         System.out.println("Total Lives: "+play.getLives());
-        while(ladder.selections.size() < ladder.panels){
+        System.out.println(ladder.selections.size());
+        System.out.println(panels);
+        while(ladder.selections.size() < panels){
             System.out.println("---------LEGEND-----------"); 
             System.out.println("0: Glass ");
             System.out.println("1: Tempered Glass ");

@@ -67,17 +67,21 @@ public class Ladder {
         String selectionInput;
         int convertedSelection = 0;
         selectionInput = keyboard.nextLine();
-            if (selectionInput.equals('L') || selectionInput.equals('l')) {
+            if (selectionInput.equals("L") || selectionInput.equals("l")) {
                     convertedSelection = 0;
-                } else if (selectionInput.equals('R') || selectionInput.equals('r')) {
+                    System.out.println("You selected L.");
+                    return convertedSelection;
+                } else if (selectionInput.equals("R") || selectionInput.equals("r")) {
                     convertedSelection = 1;
+                    System.out.println("You selected R.");
+                    return convertedSelection;
             }  else {
                 System.out.println("Please select a valid option.");
             }
         return convertedSelection;
     }
     public int [][] createLadder() {
-        ladder = new int [10][2];
+        ladder = new int [5][2];
         for (int i = 0; i < ladder.length; i++) {
             for (int j = 0; j < ladder[i].length; j++) {
                 ladder[i][j] = (int)(2 * Math.random());
