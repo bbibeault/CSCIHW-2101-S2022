@@ -65,20 +65,20 @@ public class Ladder {
     public int getSelection(){
             System.out.println("Please pick a side: L = left | R = right");
         int selectionInput;
-        int convertedSelection;
+        int convertedSelection = 0;
         selectionInput = keyboard.nextInt();
-            if (selectionInput == 'L') {
-                char L = 0;
-                int conversion1 = Character.getNumericValue('L');
+            if (selectionInput == 'L' || 'l') {
+                
+                convertedSelection =
                 } else if (selectionInput == 'l') {
-                    char l = 0;
-                    int conversion2 = Character.getNumericValue('l');
+                  
+                    convertedSelection =
                 } else if (selectionInput == 'R') {
-                    char R = 1;
-                    int conversion3 = Character.getNumericValue('R');
+                   
+                    convertedSelection =
                  } else if (selectionInput == 'r') {
-                    char r = 1;
-                    int conversion4 = Character.getNumericValue('r');
+                    
+                    convertedSelection =
             }  else {
                 System.out.println("Please select a valid option.");
             }
@@ -87,7 +87,7 @@ public class Ladder {
     public int [][] createLadder() {
         ladder = new int [10][2];
         for (int i = 0; i < ladder.length; i++) {
-            for (int j = 0; j < ladder[i].length; i++) {
+            for (int j = 0; j < ladder[i].length; j++) {
                 ladder[i][j] = (int)(2 * Math.random());
             } if (ladder[i][0] == ladder[i][1]) {
                 if (ladder[i][0] == 0) {
@@ -161,5 +161,28 @@ public class Ladder {
             System.out.println("ERROR LADDER IS NOT CREATED OR IS NULL...");
         }
     }
-
+    public void printLadder(){
+        try {
+            System.out.println("|||||| ---- Start");
+            for (int i = 0; i < ladder.length; i++) {
+                for (int j = 0; j < ladder[i].length; j++) {
+                    System.out.print("|"+ladder[i][j] + "|");
+                }
+                System.out.println();
+            }
+            System.out.println("|||||| ---- Finish");
+        } catch (Exception e) {
+            System.out.println("ERROR LADDER IS NOT CREATED OR IS NULL...");
+        }
+    }
+    public void printCurrentLadder(){
+        System.out.println("|||||| ---- Start");
+        for (int i = 0; i < selections.size(); i++) {
+            for (int j = 0; j < ladder[i].length; j++) {
+                System.out.print("|"+ladder[i][j] + "|");
+            }
+            System.out.println();
+        }
+        System.out.println("|?||?|");
+    }
 }
