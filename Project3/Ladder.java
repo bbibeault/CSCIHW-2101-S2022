@@ -122,29 +122,29 @@ public class Ladder {
             System.out.println("Incorrect. You lose 1 life.");
             return false;
         }
-    // create a boolean method called calcPanel that takes in the following parameters:
-    // 1. 2d int array ladder 
-    // 2. Integer ArrayList called selections
-    // This method is pretty complex and will calculate the selections from the user in getSelection
-    // and see if it matches up the 2d array from createLadder
-    // First create an int size of the selections size 
-    // then print the Round variable from above (thats why we made it global)
-    // make an int arrayt called temp of size 2 
-    // create a for loop as long as i is less than ladder[0].length
-        // temp[i] = ladder[size][i]
-    // create an int variable called currentSelection to get the current selection from the getSelection method
-    // use the array list's add method to add the currentSelection
-    // create an int choice to use the selections array list method .get for the selections size-1(also another arraylist method)
-    // using an if statment check if temp[choice]==1
-        // if it is then the choice is correct 
-        // print answer is correct 
+    // create a boolean method called calcPanel that takes in the following parameters: D
+    // 1. 2d int array ladder  D
+    // 2. Integer ArrayList called selections DD
+    // This method is pretty complex and will calculate the selections from the user in getSelection D
+    // and see if it matches up the 2d array from createLadder D
+    // First create an int size of the selections size D
+    // then print the Round variable from above (thats why we made it global) D
+            // make an int arrayt called temp of size 2 
+            // create a for loop as long as i is less than ladder[0].length
+                // temp[i] = ladder[size][i]
+    // create an int variable called currentSelection to get the current selection from the getSelection method D
+    // use the array list's add method to add the currentSelection D
+    // create an int choice to use the selections array list method .get for the selections size-1(also another arraylist method) D
+    // using an if statment check if temp[choice]==1 D
+        // if it is then the choice is correct D
+        // print answer is correct D
         // increment the round counter
-        // return true (this is a boolean method afterall)
-    // else
+        // return true (this is a boolean method afterall) D
+    // else D
         // remove the last variable from the selections arraylist (using size method (size-1) like above)
         // increment the round counter
-        // print and say they lose 1 life 
-        // return false 
+        // print and say they lose 1 life D
+        // return false D
     
     // EVERYTHING AFTER THIS POINT IS TO PRINT THE LADDER
     // HERE IS HOW TO PRINT A BLANK LADDER
