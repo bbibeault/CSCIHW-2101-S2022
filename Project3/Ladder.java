@@ -103,23 +103,25 @@ public class Ladder {
         int size = selections.size();
         System.out.println(round);
         // make arrayt called temp here
+        // int arrayt[];
         for (int i = 0; i < ladder[0].length; i++) {
             return (temp[i] = ladder[size][i]);
         }
         int currentSelection;
         currentSelection = getSelection();
-        // array add method here || add it to the which array though???
+        arList.add(currentSelection);
         int choice;
-        // choice = which array am i grabbing from?
+        choice = arList.get(size - 1);
         if (temp[choice] == 1) {
             System.out.println("Your choice is correct.");
             // round counter... so temp++?
             return true;
         }
-        // else (arrayList.remove)
-        // round counter... so temp++?
-        // System.out.println("Incorrect. You lose 1 life.");
-        // return false
+        else (arList.remove(size - 1)) {
+        }
+        round counter... so temp++?
+        System.out.println("Incorrect. You lose 1 life.");
+        return false
     }
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder 
