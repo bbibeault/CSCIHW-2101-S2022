@@ -22,7 +22,7 @@ public class Ladder {
         panel = panels;
     }
     // create an array list of integers for the selections
-    ArrayList<Integer> arList = new ArrayList<Integer>();
+    ArrayList<Integer> selections = new ArrayList<Integer>();
 
     // ----make a int method to get the selection from the user called getSelection()---
        // create a int variable for converetedSelection
@@ -102,26 +102,27 @@ public class Ladder {
     public boolean calcPanel (int[][] ladder, ArrayList<Integer> selections) {
         int size = selections.size();
         System.out.println(round);
-        // make arrayt called temp here
-        // int arrayt[]
+        int[] temp = new int[2];
         for (int i = 0; i < ladder[0].length; i++) {
-            return (temp[i] = ladder[size][i]);
+            temp[i] = ladder[size][i];
         }
         int currentSelection;
         currentSelection = getSelection();
-        arList.add(currentSelection);
+        selections.add(currentSelection);
         int choice;
-        choice = arList.get(size - 1);
+        choice = selections.get(selections.size() - 1);
         if (temp[choice] == 1) {
             System.out.println("Your choice is correct.");
-            // round counter... so temp++?
+            round ++;
             return true;
         }
-        else (arList.remove(size - 1) {
-            // round counter... so temp++?
+        else {
+            selections.remove(selections.size() - 1);
+            round ++;
             System.out.println("Incorrect. You lose 1 life.");
             return false;
         }
+    }
     // create a boolean method called calcPanel that takes in the following parameters: D
     // 1. 2d int array ladder  D
     // 2. Integer ArrayList called selections DD
