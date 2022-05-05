@@ -64,25 +64,17 @@ public class Ladder {
     Scanner keyboard = new Scanner(System.in);
     public int getSelection(){
             System.out.println("Please pick a side: L = left | R = right");
-        int selectionInput;
+        String selectionInput;
         int convertedSelection = 0;
-        selectionInput = keyboard.nextInt();
-            if (selectionInput == 'L' || 'l') {
-                
-                convertedSelection =
-                } else if (selectionInput == 'l') {
-                  
-                    convertedSelection =
-                } else if (selectionInput == 'R') {
-                   
-                    convertedSelection =
-                 } else if (selectionInput == 'r') {
-                    
-                    convertedSelection =
+        selectionInput = keyboard.nextLine();
+            if (selectionInput.equals('L') || selectionInput.equals('l')) {
+                    convertedSelection = 0;
+                } else if (selectionInput.equals('R') || selectionInput.equals('r')) {
+                    convertedSelection = 1;
             }  else {
                 System.out.println("Please select a valid option.");
             }
-        return selectionInput;
+        return convertedSelection;
     }
     public int [][] createLadder() {
         ladder = new int [10][2];
