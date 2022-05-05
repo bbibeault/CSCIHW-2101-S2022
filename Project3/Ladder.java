@@ -103,7 +103,7 @@ public class Ladder {
         int size = selections.size();
         System.out.println(round);
         // make arrayt called temp here
-        // int arrayt[];
+        // int arrayt[]
         for (int i = 0; i < ladder[0].length; i++) {
             return (temp[i] = ladder[size][i]);
         }
@@ -117,12 +117,11 @@ public class Ladder {
             // round counter... so temp++?
             return true;
         }
-        else (arList.remove(size - 1)) {
+        else (arList.remove(size - 1) {
+            // round counter... so temp++?
+            System.out.println("Incorrect. You lose 1 life.");
+            return false;
         }
-        round counter... so temp++?
-        System.out.println("Incorrect. You lose 1 life.");
-        return false
-    }
     // create a boolean method called calcPanel that takes in the following parameters:
     // 1. 2d int array ladder 
     // 2. Integer ArrayList called selections
